@@ -4,7 +4,7 @@ import ProjectCard from "../projects/projetcCard/ProjectCard";
 import projectsData from "../../../public/data/projects.json";
 import experienceData from "../../../public/data/experiences.json"
 import Home from "../home/Home";
-import Contact from "../contact/contact";
+import Contact from "../contact/Contact";
 import Experiences from "../cv/Cv";
 
 const Content = ({language, page, setpage, count}) => {
