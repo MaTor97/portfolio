@@ -1,0 +1,45 @@
+#side {
+    border-right: 2px solid black;
+    height: 100%;
+    width: 390px;
+    background-color: #f1c40f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    ul {
+        border: 2px solid black;
+        background-color: #2ecc71;
+        height: 85%;
+        width: 80%;
+        
+        li {
+            border: 2px solid black;
+            background-color: white;
+            padding: 5px;
+            font-family: 'source code pro', monospace;
+            font-weight: 700;
+            margin: 5px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .photo {
+            height: 300px;
+            border-radius: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+            padding: 40px;
+            background-color: #3498db;
+            
+            img {
+              width: 111%;
+              height: 111%;
+              border-radius: 50%;
+              border: 2px solid black;
+              background-color: aliceblue;
+            }
+        }
+    }
+}

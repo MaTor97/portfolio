@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "image": "/assets/SolarSystem.png",
+            "title": {
+                "FR": "Système Solaire",
+                "EN": "Solar System",
+                "IT": "Sistema Solare"
+            },
+            "description": {
+                "FR": "Collection de cartes contenant des informations sur chaque planète du système solaire. Les informations s'affichent en cliquant sur la carte, elles proviennent de l'application même, dans un objet construit pour l'occasion.",
+                "EN": "Collection of cards containing information about each planet in the solar system. The information is displayed by clicking on the card, it comes from the application itself, in an object built for the occasion.",
+                "IT": "Collezione di carte contenenti informazioni su ogni pianeta del sistema solare. Le informazioni vengono visualizzate cliccando sulla carta, provengono dall'applicazione stessa, in un oggetto costruito per l'occasione."
+            },
+            "technologies": ["JavaScript", "CSS", "Netlify"],
+            "github": "https://github.com/MaTor97/solar_system",
+            "demo": "https://solar-sy.netlify.app"
+        },
+        {
+            "image": "/assets/pokedex.png",
+            "title": {
+                "FR": "Pokedex",
+                "EN": "Pokedex",
+                "IT": "Pokedex"
+            },
+            "description": {
+                "FR": "Application permettant de rechercher des pokémons par nom ou par numéro. Les informations s'affichent en cliquant sur la carte et le site est responsive, elles proviennent de pokéApi et d'autres urls pour les images.",
+                "EN": "Application allowing to search for pokémons by name or number. The information is displayed by clicking on the card and the site is responsive, it comes from pokéApi and other urls for the images.",
+                "IT": "Applicazione che permette di cercare pokémon per nome o numero. Le informazioni vengono visualizzate cliccando sulla carta e il sito è responsive, provengono da pokéApi e altri url per le immagini."
+            },
+            "technologies": ["React", "API", "Netlify"],
+            "github": "https://github.com/MaTor97/pokedex",
+            "demo": "https://pokedex-becode.netlify.app"
+        },
+        {
+            "image": "/assets/taskManager.png",
+            "title": {
+                "FR": "Agenda",
+                "EN": "Task Manager",
+                "IT": "Agenda"
+            },
+            "description": {
+                "FR": "Application permettant de gérer des tâches. Les tâches sont stockées dans le local storage et peuvent être supprimées ou marquées comme terminées. Le site est responsive.",
+                "EN": "Application allowing to manage tasks. Tasks are stored in local storage and can be deleted or marked as completed. The site is responsive.",
+                "IT": "Applicazione che permette di gestire le attività. Le attività sono memorizzate nel local storage e possono essere eliminate o contrassegnate come completate. Il sito è responsive."
+            },
+            "technologies": ["React", "Local Storage", "Netlify"],
+            "github": "https://github.com/MaTor97/react_to_do_list",
+            "demo": "https://to-do-list-becode.netlify.app"
+        }
+    ]
+}

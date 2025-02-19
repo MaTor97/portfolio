@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 30px;
+    font-family: 'source code pro', monospace;
+    background-color: #3498db;
+    height: 20vh;
+
+    h1 {
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        padding: 15px;
+        color: black;
+        cursor: pointer;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border: 2px solid black;
+            height: 100%;
+            align-items: center;
+            background-color: white;
+            
+            li {
+                margin: 5px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
