@@ -1,7 +1,7 @@
 .card {
     align-items: center;
     border: 2px solid #000;
-    padding: 20px;
+    padding: 10px;
     background-color: #2ecc71;
     font-family: 'source code pro', monospace;
     height: 100%;
@@ -25,7 +25,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 101%;
             height: 290px;
             padding: 1rem;   
             font-weight: 700;
