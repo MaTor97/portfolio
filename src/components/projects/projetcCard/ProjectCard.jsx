@@ -16,7 +16,7 @@ const ProjectCard = ({ project, language }) => {
                             ? {cursor: "url('../public/assets/cursors/cursor.cur'), auto"} 
                             : project.demo === 'https://pokedex-becode.netlify.app'
                             ? {cursor: "url('../public/assets/cursors/masterball.png'), auto"}
-                            : {cursor: "url('../public/assets/cursors/sym46.cur'), auto"}
+                            : {cursor: "pointer, auto"}
                         }
                     >
                     <img src={project.image} alt={project.title[language]} />
