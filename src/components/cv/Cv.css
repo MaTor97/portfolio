@@ -52,7 +52,8 @@
             background-color: #3498db;
             padding: 20px;
             border-left: 4px solid #000;
-            overflow: scroll;
+            height: 247px;
+            overflow: hidden;
             scrollbar-width: none;
     
             li {
