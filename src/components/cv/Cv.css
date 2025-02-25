@@ -25,7 +25,7 @@
         .desc {
             .imgContainer {
                 width: 662px;
-                height: 172px;
+                height: 174px;
 
                 img {
                     height: 100%;
@@ -39,7 +39,7 @@
                 background-color: white;
                 padding: 20px;
                 border-top: 4px solid black;
-                height: 201px;
+                height: 202px;
                 overflow: auto;
                 scrollbar-width: none;
             }
