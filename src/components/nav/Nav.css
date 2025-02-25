@@ -37,7 +37,7 @@
             img {
               width: 111%;
               height: 111%;
-              border-radius: 50%;
+              border-radius: 30% 70% / 70% 10%;
               border: 2px solid black;
               background-color: aliceblue;
             }
