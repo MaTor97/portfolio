@@ -63,6 +63,7 @@
                 margin: 5px;
                 font-family: 'source code pro', monospace;
                 font-weight: 700;
+                font-size: 22px;
             }
         }
     }
@@ -74,7 +75,7 @@
         padding: 10px 50px;
         background-color: #f1c40f;
         font-family: 'jacquard 12', sans-serif;
-        font-size: 1.5rem;
+        font-size: 20px;
         text-align: right;
     }  
 }
