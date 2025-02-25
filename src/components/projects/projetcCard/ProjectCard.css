@@ -45,7 +45,7 @@
             .project-card__links {
                 display: flex;
                 justify-content: space-around;
-                width: 100%;
+                width: 155px;
                 margin: 10px 0;
                 background-color: #3498db;
                 padding: 5px;
