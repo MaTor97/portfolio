@@ -24,12 +24,12 @@
 
         .desc {
             .imgContainer {
-                width: 595px;
-                height: 146px;
+                width: 683px;
+                height: 170px;
 
                 img {
                     height: 100%;
-                    width: 105%;
+                    width: 100%;
                 }
             }
             
@@ -39,7 +39,7 @@
                 background-color: white;
                 padding: 20px;
                 border-top: 4px solid black;
-                height: 186px;
+                height: 200px;
                 overflow: auto;
                 scrollbar-width: none;
             }
@@ -47,7 +47,7 @@
 
         ul {
             min-width: 270px;
-            height: 332px;
+            height: 100%;
             text-align: left;
             background-color: #3498db;
             padding: 5px;
