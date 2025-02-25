@@ -11,13 +11,6 @@ const ProjectCard = ({ project, language }) => {
                     href={project.demo} 
                     target="_blank" 
                      rel="noopener noreferrer"
-                        style={
-                            project.demo === 'https://solar-sy.netlify.app' 
-                            ? {cursor: "url('../public/assets/cursors/cursor.cur'), auto"} 
-                            : project.demo === 'https://pokedex-becode.netlify.app'
-                            ? {cursor: "url('../public/assets/cursors/masterball.png'), auto"}
-                            : {cursor: "pointer, auto"}
-                        }
                     >
                     <img src={project.image} alt={project.title[language]} />
                 </a>
