@@ -1,0 +1,32 @@
+.skillset {
+    background-color: #2ecc71;
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    div {     
+        height: 52px;
+        width: 100%;
+        border-bottom: 4px solid black;
+        background-color: #3498db;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 1.5rem;
+        
+    }
+
+    ul {     
+        margin: auto 25%;
+  
+        li {
+            padding: 10px;
+            border: 2px solid black;
+            background-color: #f1c40f;
+            font-family: 'source code pro', monospace;
+            font-size: 22px;
+            font-weight: 700;  
+            margin: 20px;
+            width: 400px;
+        }
+    }
+}

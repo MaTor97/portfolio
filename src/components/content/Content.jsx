@@ -3,7 +3,9 @@ import './Content.css';
 import ProjectCard from "../projects/projetcCard/ProjectCard";
 import projectsData from "../../../public/data/projects.json";
 import experienceData from "../../../public/data/experiences.json"
+import skillsData from "../../../public/data/skills.json"
 import Home from "../home/Home";
+import Skills from "../skills/Skills"
 import Contact from "../contact/Contact";
 import Experiences from "../cv/Cv";
 
@@ -13,6 +15,18 @@ const Content = ({language, page, setpage, count}) => {
         <main>
             {page === 'home' 
                 ? <Home language={language} setpage={setpage}/>
+            : page === 'skills'
+                ? <Skills
+                    key={count} 
+                    skillset={
+                    language === 'FR'
+                        ? skillsData.fr[count]
+                    : language === 'EN'
+                        ? skillsData.en[count]
+                    : language === 'IT'
+                        ? skillsData.it[count]
+                    : null
+                }/>
             : page === 'projects' 
                 ? <ProjectCard 
                     key={count} 

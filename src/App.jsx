@@ -4,6 +4,7 @@ import Nav from './components/nav/Nav'
 import Content from './components/content/Content'
 import projectsData from '../public/data/projects.json'
 import experienceData from '../public/data/experiences.json'
+import skillsData from "../public/data/skills.json"
 import './App.css'
 
 function App() {
@@ -22,6 +23,11 @@ function App() {
           ? <button style={{opacity: 0}}>{'<'}</button>
           : <button onClick={() => setCount(count - 1)}>{'<'}</button>}
         {page !== 'cv'
+          ? null
+          : count === 0
+          ? <button style={{opacity: 0}}>{'<'}</button>
+          : <button onClick={() => setCount(count - 1)}>{'<'}</button>}
+        {page !== 'skills'
           ? null
           : count === 0
           ? <button style={{opacity: 0}}>{'<'}</button>
@@ -53,6 +59,14 @@ function App() {
                     : language === 'IT'
                       ? `${experienceData.it[count].title} ${count+1}/${experienceData.fr.length}`
                     : null}</h2>
+        : page === 'skills'
+            ? <h2>{language === 'FR'
+                      ? `${skillsData.fr[count].category} ${count+1}/${skillsData.fr.length}`
+                    : language === 'EN'
+                      ? `${skillsData.en[count].category} ${count+1}/${skillsData.fr.length}`                    
+                    : language === 'IT'
+                      ? `${skillsData.it[count].category} ${count+1}/${skillsData.fr.length}`
+                    : null}</h2>
         : null}
         <Content language={language} page={page} count={count} setpage={setPage}/>
         {page !== 'projects' 
@@ -63,6 +77,11 @@ function App() {
         {page !== 'cv' 
           ? null
           : count >= experienceData.fr.length-1 
+          ? <button style={{opacity: 0}}>{'>'}</button>
+          : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
+        {page !== 'skills' 
+          ? null
+          : count >= skillsData.fr.length-1 
           ? <button style={{opacity: 0}}>{'>'}</button>
           : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
       </div>

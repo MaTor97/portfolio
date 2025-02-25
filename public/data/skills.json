@@ -1,0 +1,83 @@
+{
+    "fr" : [
+        {
+            "category": "Langages & Technologies",
+            "icon": "💻", 
+            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
+        },
+        {
+            "category": "Développement Web & Logiciel",
+            "icon": "🌐", 
+            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "API REST"]
+        },
+        {
+            "category": "Outils & Environnements",
+            "icon": "🛠️", 
+            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (déploiement)"]
+        },
+        {
+            "category": "Sécurité & Bonnes pratiques",
+            "icon": "🔒", 
+            "items": ["Sensibilisation à la cybersécurité", "Validation des entrées", "Gestion des accès"]
+        },
+        {
+            "category": "Soft Skills",
+            "icon": "🤝", 
+            "items": ["Rigueur et précision", "Travail en équipe", "Gestion du temps"]
+        }
+    ],
+    "en" : [
+        {
+            "category": "Languages & Technologies",
+            "icon": "💻", 
+            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
+        },
+        {
+            "category": "Web & Software Development",
+            "icon": "🌐", 
+            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "REST API"]
+        },
+        {
+            "category": "Tools & Environments",
+            "icon": "🛠️", 
+            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (deployment)"]
+        },
+        {
+            "category": "Security & Best Practices",
+            "icon": "🔒", 
+            "items": ["Cybersecurity awareness", "Input validation", "Access management"]
+        },
+        {
+            "category": "Soft Skills",
+            "icon": "🤝", 
+            "items": ["Rigor and precision", "Teamwork", "Time management"]
+        }
+    ],
+    "it" : [
+        {
+            "category": "Linguaggi & Tecnologie",
+            "icon": "💻", 
+            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
+        },
+        {
+            "category": "Sviluppo Web & Software",
+            "icon": "🌐", 
+            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "API REST"]
+        },
+        {
+            "category": "Strumenti & Ambienti",
+            "icon": "🛠️", 
+            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (deploy)"]
+        },
+        {
+            "category": "Sicurezza & Buone pratiche",
+            "icon": "🔒", 
+            "items": ["Consapevolezza della sicurezza informatica", "Validazione degli input", "Gestione degli accessi"]
+        },
+        {
+            "category": "Competenze trasversali",
+            "icon": "🤝", 
+            "items": ["Rigorosità e precisione", "Lavoro di squadra", "Gestione del tempo"]
+        }
+    ]
+}
