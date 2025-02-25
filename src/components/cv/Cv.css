@@ -29,7 +29,7 @@
 
                 img {
                     height: 100%;
-                    width: 105%;
+                    width: 100%;
                 }
             }
             
@@ -46,11 +46,11 @@
         }
 
         ul {
-            min-width: 270px;
-            height: 332px;
+            min-width: 292px;
+            height: 100%;
             text-align: left;
             background-color: #3498db;
-            padding: 5px;
+            padding: 20px;
             border-left: 4px solid #000;
             overflow: auto;
             scrollbar-width: none;
