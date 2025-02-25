@@ -7,17 +7,18 @@
     border: 2px solid black;
 
     div {     
-        height: 52px;
-        width: 100%;
         border-bottom: 4px solid black;
+        border-right: 4px solid black;
         background-color: #3498db;
         font-family: 'Cedarville Cursive', cursive;
         font-size: 1.5rem;
-        
+        position: fixed;
+        padding: 10px 20px;
     }
 
     ul {     
         margin: auto 25%;
+        top: 50px;
   
         li {
             padding: 10px;
