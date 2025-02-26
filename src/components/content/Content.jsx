@@ -18,15 +18,9 @@ const Content = ({language, page, setpage, count}) => {
             : page === 'skills'
                 ? <Skills
                     key={count} 
-                    skillset={
-                    language === 'FR'
-                        ? skillsData.fr[count]
-                    : language === 'EN'
-                        ? skillsData.en[count]
-                    : language === 'IT'
-                        ? skillsData.it[count]
-                    : null
-                }/>
+                    skillset={skillsData[language][count]}
+                    language={language}
+                    />
             : page === 'projects' 
                 ? <ProjectCard 
                     key={count} 

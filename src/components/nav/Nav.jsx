@@ -1,5 +1,6 @@
 import React from "react";
 import './Nav.css';
+import logo from '../../../public/assets/cleaned_cube.png'
 
 const Nav = ({language, setPage, setCount}) => {
     const changePage = (page) => {
@@ -46,7 +47,7 @@ const Nav = ({language, setPage, setCount}) => {
                         : 'CONTATTO'}
                 </li>              
                 <li className="photo">
-                    <img src='#' alt="" />
+                    <img src={logo} alt="" />
                 </li>
             </ul>
         </nav>

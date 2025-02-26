@@ -61,14 +61,14 @@ function App() {
                     : null}</h2>
         : page === 'skills'
             ? <h2>{language === 'FR'
-                      ? `${skillsData.fr[count].category} ${count+1}/${skillsData.fr.length}`
+                      ? `${skillsData.FR[count].category} ${count+1}/${skillsData.FR.length}`
                     : language === 'EN'
-                      ? `${skillsData.en[count].category} ${count+1}/${skillsData.fr.length}`                    
+                      ? `${skillsData.EN[count].category} ${count+1}/${skillsData.FR.length}`                    
                     : language === 'IT'
-                      ? `${skillsData.it[count].category} ${count+1}/${skillsData.fr.length}`
+                      ? `${skillsData.IT[count].category} ${count+1}/${skillsData.FR.length}`
                     : null}</h2>
         : null}
-        <Content language={language} page={page} count={count} setpage={setPage}/>
+        <Content language={language} page={page} count={count} setpage={setPage} />
         {page !== 'projects' 
           ? null
           : count >= projectsData.projects.length-1 
@@ -81,7 +81,7 @@ function App() {
           : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
         {page !== 'skills' 
           ? null
-          : count >= skillsData.fr.length-1 
+          : count >= skillsData.FR.length-1 
           ? <button style={{opacity: 0}}>{'>'}</button>
           : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
       </div>

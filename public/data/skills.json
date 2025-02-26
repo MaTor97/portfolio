@@ -1,83 +1,412 @@
 {
-    "fr" : [
+    "FR" : [
+        {
+            "category": "Diplômes & certificats",
+            "icon": "🎓",
+            "items": [{
+                "name": "CESI",
+                "image": "/assets/compétences/cesi.png",
+                "description": "Le CESI atteste de la réussite de l'enseignement secondaire inférieur en Belgique. Je l'ai obtenu en 2015 à l'Athénée Royal Orsini Dewerpe de Jumet. Actuellement je suis un cours pour passer le CESS en jury central."
+            }, {
+                "name": "Gestion",
+                "image": "/assets/compétences/gestion.png",
+                "description": "Le Certificat de Connaissance de Gestion de Base (CCGB) est un diplôme belge qui valide des compétences fondamentales en gestion, telles que la comptabilité, le marketing et la gestion des ressources humaines. Il s'adresse aux adultes souhaitant renforcer leurs connaissances en gestion pour améliorer leur employabilité ou se reconvertir professionnellement. Je l'ai obtenu en 2015 à l'Athénée Royale Orsini Dewerpe de Jumet."
+            }, {
+                "name": "VCA",
+                "image": "/assets/compétences/security.png",
+                "description": "Le VCA (Vijfde Certificaat Aansluiting) est un certificat belge qui atteste des compétences en matière de sécurité sur les chantiers. Il est destiné aux travailleurs du secteur de la construction et de l'industrie, visant à garantir qu'ils connaissent les principes de sécurité et peuvent identifier les risques dans leur environnement de travail. Je l'ai obtenu en 2018 avec Mordant et Fils."
+            }, {
+                "name": "Permis B",
+                "image": "/assets/compétences/permis.png",
+                "description": "Le permis B est le permis de conduire standard en Belgique, permettant de conduire des véhicules de tourisme (voitures) dont le poids total ne dépasse pas 3 500 kg et qui peuvent transporter jusqu'à neuf personnes. Il est obtenu après avoir réussi un examen théorique et pratique, attestant des compétences nécessaires à la conduite en toute sécurité. Je l'ai obtenu en 2023."
+            },{
+                "name": "codecademy",
+                "image": "/assets/codecademy.svg",
+                "description": "Les certifications Codecademy valident les compétences acquises dans divers domaines de la programmation et du développement web. Elles couvrent des sujets comme HTML, CSS, JavaScript, Python, et bien d'autres technologies. Ces certifications sont obtenues après avoir suivi des cours interactifs et réussi des projets pratiques, démontrant ainsi la maîtrise de concepts clés dans chaque domaine. J'en ai obtenu 13 cette année."            }]
+        },
         {
             "category": "Langages & Technologies",
             "icon": "💻", 
-            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
-        },
-        {
-            "category": "Développement Web & Logiciel",
-            "icon": "🌐", 
-            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "API REST"]
+            "items": [{
+                "name": "React",
+                "image": "/assets/compétences/react.png",
+                "description": "React est une bibliothèque JavaScript open-source développée par Facebook, utilisée pour construire des interfaces utilisateur dynamiques et interactives, principalement pour des applications web. React permet de créer des composants réutilisables qui gèrent leur propre état, ce qui facilite le développement d'applications complexes et performantes. Je l'ai utilisé dans beacoup de projets tel que ce portfolio et continue à me spécialiser dedans car j'aime beaucoup le workflow de React."
+            }, {
+                "name": "Css/Sass/Scss",
+                "image": "/assets/compétences/css.png",
+                "description": "CSS, SASS et SCSS sont des technologies utilisées pour styliser des pages web. CSS (Cascading Style Sheets) définit le style des éléments HTML. SASS (Syntactically Awesome Style Sheets) et SCSS (Sassy CSS) sont des extensions de CSS qui ajoutent des fonctionnalités avancées, comme les variables, les boucles et les fonctions, pour rendre le code plus modulaire et réutilisable. SCSS est une syntaxe de SASS plus proche du CSS classique."
+            }, {
+                "name": "TypeScript",
+                "image": "/assets/compétences/typescript.png",
+                "description": "TypeScript est un sur-ensemble de JavaScript qui ajoute des types statiques et des fonctionnalités orientées objet au langage. Il permet de détecter des erreurs dès la compilation, améliorant ainsi la robustesse du code. TypeScript se compile ensuite en JavaScript, ce qui le rend compatible avec tous les navigateurs. Il est particulièrement utilisé dans les projets complexes et les grandes applications web pour assurer une meilleure gestion du code. J'apprends encore à l'utiliser et ne me servirai plus que de typescript pour mes applications futures dans le web."
+            }, {
+                "name": "php",
+                "image": "/assets/compétences/php.png",
+                "description": "PHP est un langage de programmation côté serveur principalement utilisé pour le développement web. Il permet de créer des sites dynamiques en générant du contenu HTML en temps réel. PHP est largement intégré avec des bases de données, notamment MySQL, pour gérer et afficher des données dynamiques. Open-source, il est populaire pour son efficacité, sa simplicité et son large écosystème de frameworks et de bibliothèques. Je l'utilise pour mes backends (aller chercher les données dans des base de données ou dans une API) dans mes projets tels que le pokedex."
+            }, {
+                "name": "SQL",
+                "image": "/assets/compétences/sql.png",
+                "description": "SQL (Structured Query Language) est un langage utilisé pour gérer et interagir avec des bases de données relationnelles. Il permet d'effectuer des opérations comme la création, la modification, la suppression et la consultation de données via des requêtes. SQL est essentiel pour travailler avec des bases de données comme MySQL, PostgreSQL ou SQLite, et est largement utilisé dans les applications web pour stocker et récupérer des informations. J'ai surtout utilisé MariaDb et phpMyAdmin mais je n'ai rien contre le changement."
+            }, {
+                "name": "Java",
+                "image": "/assets/compétences/java.png",
+                "description": "Java est un langage de programmation orienté objet qui permet de créer des applications robustes et performantes. Il est portable, ce qui signifie que le même code peut fonctionner sur différentes plateformes sans modifications. De plus, Java est largement utilisé pour le développement d'applications web, mobiles et d'entreprise. C'est mon langage de prédilection pour toutes les applications hors web."
+            }, {
+                "name": "Springboot",
+                "image": "/assets/compétences/springboot.png",
+                "description": "Spring Boot est un framework Java open-source qui simplifie le développement d'applications en réduisant les configurations nécessaires. Il permet de créer des applications autonomes et prêtes à déployer, avec un environnement de développement rapide et une multitude de fonctionnalités intégrées. Spring Boot est idéal pour développer des microservices grâce à sa simplicité et sa flexibilité."
+            }]
         },
         {
             "category": "Outils & Environnements",
             "icon": "🛠️", 
-            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (déploiement)"]
-        },
-        {
-            "category": "Sécurité & Bonnes pratiques",
-            "icon": "🔒", 
-            "items": ["Sensibilisation à la cybersécurité", "Validation des entrées", "Gestion des accès"]
+            "items": [ {
+                "name": "Node.js",
+                "image": "/assets/compétences/node.png",
+                "description": "Node.js est un environnement d'exécution JavaScript côté serveur qui permet d'exécuter du code JavaScript en dehors d'un navigateur. Il est construit sur le moteur V8 de Google Chrome et utilise un modèle d'E/S non bloquant et orienté événements, ce qui le rend très performant pour les applications en temps réel et intensives en E/S. Node.js est souvent utilisé pour créer des serveurs web, des API et des applications de réseau."
+            }, {
+                "name": "Git/Github",
+                "image": "/assets/compétences/github.png",
+                "description": "GitHub est une plateforme de développement collaborative qui permet de héberger et gérer des projets de développement de logiciels. Elle facilite le contrôle de version en utilisant Git, permettant aux développeurs de suivre les modifications, de collaborer avec d'autres, et de gérer les différentes versions de leur code. En plus de cela, GitHub offre des fonctionnalités pour la revue de code, l'intégration continue et la documentation des projets."
+            }, {
+                "name": "Bash",
+                "image": "/assets/compétences/bash.png",
+                "description": "Bash (Bourne Again SHell) est un interpréteur de commandes et un langage de script utilisé principalement sur les systèmes Unix et Linux. Il permet d'automatiser des tâches répétitives et de gérer des fichiers, des processus et des utilisateurs via des scripts. Bash est souvent utilisé dans les scripts de démarrage, l'administration système et la gestion des serveurs."
+            }, {
+                "name": "VsCode",
+                "image": "/assets/compétences/vscode.png",
+                "description": "Visual Studio Code (VSCode) est un éditeur de code source gratuit et open-source développé par Microsoft. Il est connu pour sa légèreté et sa rapidité, tout en offrant une multitude de fonctionnalités comme le débogage, l'auto-complétion, la coloration syntaxique et l'intégration de contrôle de version via Git. Grâce à son vaste écosystème d'extensions, il peut être personnalisé pour répondre aux besoins spécifiques de divers langages de programmation et frameworks. Je l'utilise pour l'instant mais passerai peut être sur intellij à l'avenir."
+            }, {
+                "name": "Netlify",
+                "image": "/assets/compétences/netlify.png",
+                "description": "Netlify est une plateforme de déploiement et d'hébergement pour les applications web modernes, conçue pour faciliter la mise en ligne de projets statiques et JAMstack (JavaScript, APIs, et balisage). Elle propose une intégration continue, une livraison continue (CI/CD) automatisée, et des fonctionnalités avancées telles que les redirections, les formulaires et les fonctions sans serveur (serverless). Netlify simplifie grandement le processus de déploiement, permettant aux développeurs de se concentrer sur la création de contenu et de fonctionnalités plutôt que sur l'infrastructure."
+            }, {
+                "name": "Linux",
+                "image": "/assets/compétences/linux.png",
+                "description": "Linux est un système d'exploitation open-source basé sur Unix, qui est largement utilisé sur les serveurs, les ordinateurs de bureau, les appareils mobiles, et bien plus encore. Il est apprécié pour sa sécurité, sa stabilité et sa flexibilité, offrant aux utilisateurs et aux développeurs un contrôle total sur le système. Linux dispose d'un vaste écosystème de distributions, comme Ubuntu, Fedora et Debian, chacune adaptée à différents besoins et préférences des utilisateurs."
+            }, {
+                "name": "Chatgpt",
+                "image": "/assets/compétences/gpt.png",
+                "description": "Le prompt engineering est la pratique de concevoir et formuler des demandes précises pour interagir efficacement avec les modèles d'intelligence artificielle (IA), comme ChatGPT. Je m'en sers pour les tâches répétitives et pour me guider dans la résolution de certains problèmes. Ca m'aide aussi parfois a mettre les choses en perspective."
+            }]
         },
         {
             "category": "Soft Skills",
             "icon": "🤝", 
-            "items": ["Rigueur et précision", "Travail en équipe", "Gestion du temps"]
+            "items": [{
+                "name": "Curiosité",
+                "image": "/assets/compétences/curiosité.png",
+                "description": "La curiosité ma accompagné dans chaque phase de ma vie, mon cv rempli d'expériences variées en témoigne, j'ai regardé partout avant de trouver ce qui me plaît vraiment pour en faire maintenant mon métier."
+            }, {
+                "name": "Communication",
+                "image": "/assets/compétences/communication.png",
+                "description": "La communication est une compétence que j'ai pu développer dans les métiers de la restauration et qui s'est révélée être un atout très important dans toutes les fonctions que j'ai pu éxercer."
+            }, {
+                "name": "Perspicacité",
+                "image": "/assets/compétences/openMind.png",
+                "description": "Sans ouverture d'esprit on passe à côté de beaucoup de choses dans la vie et on reste enfermé dans une spirale sans fin. Je laisse toujours une chance a une idée avant de l'écarter car même d'une mauvaise idée peut produire quelque chose de merveilleux. Par exemple, la crise sanitaire de 2019 m'a permis de découvrir le développement web et maintenant j'en fais mon métier."
+            }, {
+                "name": "Proactivité",
+                "image": "/assets/compétences/proactive.png",
+                "description": "Pour qu'une tâche soit accomplie correctement il faut suivre la procédure apprise, mais pour innover il faut se l'approprier et en tirer quelque chose de plus et c'est en gardant un esprit ouvert et proactif qu'on peut tirer le meilleur de nous même et de notre travail."
+            }, {
+                "name": "Adaptabilité",
+                "image": "/assets/compétences/adapt.png",
+                "description": "Si mes nombreuses expériences parfois sur une courte période de temps m'ont appris quelque chose, c'est à m'adapter aux nouvelles situations. Dans chaque métier que j'ai pu éxercer il y a eu de nouveaux défis qui m'ont fait grandir un peu plus à chaque fois."
+            }]
         }
     ],
-    "en" : [
+    "EN" : [
         {
-            "category": "Languages & Technologies",
-            "icon": "💻", 
-            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
+            "category": "Degrees & Certificates",
+            "icon": "🎓",
+            "items": [
+                {
+                    "name": "CESI",
+                    "image": "/assets/compétences/cesi.png",
+                    "description": "The CESI certifies the completion of lower secondary education in Belgium. I obtained it in 2015 at the Athénée Royal Orsini Dewerpe in Jumet. Currently, I am taking a course to pass the CESS through the central jury."
+                },
+                {
+                    "name": "Management",
+                    "image": "/assets/compétences/gestion.png",
+                    "description": "The Basic Management Knowledge Certificate (CCGB) is a Belgian diploma that validates fundamental skills in management, such as accounting, marketing, and human resources management. It is aimed at adults looking to strengthen their management knowledge to improve their employability or transition professionally. I obtained it in 2015 at the Athénée Royale Orsini Dewerpe in Jumet."
+                },
+                {
+                    "name": "VCA",
+                    "image": "/assets/compétences/security.png",
+                    "description": "The VCA (Vijfde Certificaat Aansluiting) is a Belgian certificate that attests to safety skills on construction sites. It is intended for workers in the construction and industrial sectors, aiming to ensure they know safety principles and can identify risks in their work environment. I obtained it in 2018 with Mordant et Fils."
+                },
+                {
+                    "name": "Driver's License B",
+                    "image": "/assets/compétences/permis.png",
+                    "description": "The B license is the standard driver's license in Belgium, allowing the driving of passenger vehicles (cars) with a total weight not exceeding 3,500 kg and capable of transporting up to nine people. It is obtained after passing a theoretical and practical exam, certifying the necessary skills for safe driving. I obtained it in 2023."
+                },
+                {
+                    "name": "Codecademy",
+                    "image": "/assets/codecademy.svg",
+                    "description": "Codecademy certifications validate skills acquired in various programming and web development fields. They cover topics like HTML, CSS, JavaScript, Python, and many other technologies. These certifications are earned after completing interactive courses and successfully passing practical projects, demonstrating mastery of key concepts in each field. I have obtained 13 this year."
+                }
+            ]
         },
         {
-            "category": "Web & Software Development",
-            "icon": "🌐", 
-            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "REST API"]
+            "category": "Languages & Technologies",
+            "icon": "💻",
+            "items": [
+                {
+                    "name": "React",
+                    "image": "/assets/compétences/react.png",
+                    "description": "React is an open-source JavaScript library developed by Facebook, used to build dynamic and interactive user interfaces, primarily for web applications. React allows the creation of reusable components that manage their own state, making it easier to develop complex and high-performance applications. I have used it in many projects, such as this portfolio, and continue to specialize in it because I really enjoy React's workflow."
+                },
+                {
+                    "name": "CSS/Sass/SCSS",
+                    "image": "/assets/compétences/css.png",
+                    "description": "CSS, SASS, and SCSS are technologies used to style web pages. CSS (Cascading Style Sheets) defines the style of HTML elements. SASS (Syntactically Awesome Style Sheets) and SCSS (Sassy CSS) are CSS extensions that add advanced features like variables, loops, and functions to make the code more modular and reusable. SCSS is a SASS syntax closer to classic CSS."
+                },
+                {
+                    "name": "TypeScript",
+                    "image": "/assets/compétences/typescript.png",
+                    "description": "TypeScript is a superset of JavaScript that adds static types and object-oriented features to the language. It allows for error detection during compilation, improving code robustness. TypeScript is then compiled into JavaScript, making it compatible with all browsers. It is particularly used in complex projects and large web applications to ensure better code management. I am still learning to use it and will only use TypeScript for my future web applications."
+                },
+                {
+                    "name": "PHP",
+                    "image": "/assets/compétences/php.png",
+                    "description": "PHP is a server-side programming language mainly used for web development. It allows the creation of dynamic websites by generating HTML content in real-time. PHP is widely integrated with databases, especially MySQL, to manage and display dynamic data. Being open-source, it is popular for its efficiency, simplicity, and large ecosystem of frameworks and libraries. I use it for my backends (fetching data from databases or APIs) in projects like the Pokedex."
+                },
+                {
+                    "name": "SQL",
+                    "image": "/assets/compétences/sql.png",
+                    "description": "SQL (Structured Query Language) is a language used to manage and interact with relational databases. It allows operations like creating, modifying, deleting, and querying data. SQL is essential for working with databases like MySQL, PostgreSQL, or SQLite, and is widely used in web applications to store and retrieve information. I have mainly used MariaDB and phpMyAdmin, but I am open to change."
+                },
+                {
+                    "name": "Java",
+                    "image": "/assets/compétences/java.png",
+                    "description": "Java is an object-oriented programming language that allows the creation of robust and high-performance applications. It is portable, meaning the same code can run on different platforms without modifications. Moreover, Java is widely used for developing web, mobile, and enterprise applications. It is my preferred language for all non-web applications."
+                },
+                {
+                    "name": "Spring Boot",
+                    "image": "/assets/compétences/springboot.png",
+                    "description": "Spring Boot is an open-source Java framework that simplifies application development by reducing the necessary configurations. It allows the creation of standalone, deployable applications with a fast development environment and a multitude of built-in features. Spring Boot is ideal for developing microservices due to its simplicity and flexibility."
+                }
+            ]
         },
         {
             "category": "Tools & Environments",
-            "icon": "🛠️", 
-            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (deployment)"]
-        },
-        {
-            "category": "Security & Best Practices",
-            "icon": "🔒", 
-            "items": ["Cybersecurity awareness", "Input validation", "Access management"]
+            "icon": "🛠️",
+            "items": [
+                {
+                    "name": "Node.js",
+                    "image": "/assets/compétences/node.png",
+                    "description": "Node.js is a server-side JavaScript runtime environment that allows the execution of JavaScript code outside a browser. It is built on Google Chrome's V8 engine and uses a non-blocking, event-driven I/O model, making it highly performant for real-time and I/O-intensive applications. Node.js is often used to create web servers, APIs, and network applications."
+                },
+                {
+                    "name": "Git/GitHub",
+                    "image": "/assets/compétences/github.png",
+                    "description": "GitHub is a collaborative development platform that allows hosting and managing software development projects. It facilitates version control using Git, enabling developers to track changes, collaborate with others, and manage different versions of their code. Additionally, GitHub offers features for code review, continuous integration, and project documentation."
+                },
+                {
+                    "name": "Bash",
+                    "image": "/assets/compétences/bash.png",
+                    "description": "Bash (Bourne Again SHell) is a command interpreter and scripting language primarily used on Unix and Linux systems. It allows the automation of repetitive tasks and the management of files, processes, and users through scripts. Bash is often used in startup scripts, system administration, and server management."
+                },
+                {
+                    "name": "VS Code",
+                    "image": "/assets/compétences/vscode.png",
+                    "description": "Visual Studio Code (VS Code) is a free and open-source code editor developed by Microsoft. It is known for its lightness and speed, while offering a multitude of features like debugging, auto-completion, syntax highlighting, and version control integration via Git. Thanks to its vast ecosystem of extensions, it can be customized to meet the specific needs of various programming languages and frameworks. I currently use it but may switch to IntelliJ in the future."
+                },
+                {
+                    "name": "Netlify",
+                    "image": "/assets/compétences/netlify.png",
+                    "description": "Netlify is a deployment and hosting platform for modern web applications, designed to facilitate the deployment of static and JAMstack (JavaScript, APIs, and Markup) projects. It offers continuous integration, automated continuous delivery (CI/CD), and advanced features like redirects, forms, and serverless functions. Netlify greatly simplifies the deployment process, allowing developers to focus on creating content and features rather than infrastructure."
+                },
+                {
+                    "name": "Linux",
+                    "image": "/assets/compétences/linux.png",
+                    "description": "Linux is an open-source Unix-based operating system widely used on servers, desktops, mobile devices, and more. It is appreciated for its security, stability, and flexibility, offering users and developers full control over the system. Linux has a vast ecosystem of distributions, such as Ubuntu, Fedora, and Debian, each tailored to different user needs and preferences."
+                },
+                {
+                    "name": "Chatgpt",
+                    "image": "/assets/compétences/gpt.png",
+                    "description": "Prompt engineering is the practice of designing and formulating precise requests to effectively interact with artificial intelligence (AI) models, like ChatGPT. I use it for repetitive tasks and to guide me in solving certain problems. It also helps me put things into perspective sometimes."
+                }
+            ]
         },
         {
             "category": "Soft Skills",
-            "icon": "🤝", 
-            "items": ["Rigor and precision", "Teamwork", "Time management"]
+            "icon": "🤝",
+            "items": [
+                {
+                    "name": "Curiosity",
+                    "image": "/assets/compétences/curiosité.png",
+                    "description": "Curiosity has accompanied me in every phase of my life, as evidenced by my resume filled with varied experiences. I looked everywhere before finding what I truly enjoy, and now I have made it my profession."
+                },
+                {
+                    "name": "Communication",
+                    "image": "/assets/compétences/communication.png",
+                    "description": "Communication is a skill I developed in the hospitality industry, and it has proven to be a very important asset in all the roles I have held."
+                },
+                {
+                    "name": "Insight",
+                    "image": "/assets/compétences/openMind.png",
+                    "description": "Without open-mindedness, one misses out on many things in life and remains stuck in an endless spiral. I always give an idea a chance before dismissing it, as even a bad idea can produce something wonderful. For example, the 2019 health crisis allowed me to discover web development, and now it is my profession."
+                },
+                {
+                    "name": "Proactivity",
+                    "image": "/assets/compétences/proactive.png",
+                    "description": "For a task to be accomplished correctly, one must follow the learned procedure, but to innovate, one must take ownership of it and derive something more. It is by keeping an open and proactive mind that we can bring out the best in ourselves and our work."
+                },
+                {
+                    "name": "Adaptability",
+                    "image": "/assets/compétences/adapt.png",
+                    "description": "If my many experiences, sometimes over short periods, have taught me anything, it is to adapt to new situations. In every job I have held, there have been new challenges that have helped me grow a little more each time."
+                }
+            ]
         }
     ],
-    "it" : [
+    "IT" : [
         {
-            "category": "Linguaggi & Tecnologie",
-            "icon": "💻", 
-            "items": ["React", "SASS", "TypeScript", "Php", "SQL", "Java", "Node.js"]
+            "category": "Diplomi & Certificati",
+            "icon": "🎓",
+            "items": [
+                {
+                    "name": "CESI",
+                    "image": "/assets/compétences/cesi.png",
+                    "description": "Il CESI attesta il completamento dell'istruzione secondaria inferiore in Belgio. L'ho ottenuto nel 2015 all'Athénée Royal Orsini Dewerpe di Jumet. Attualmente sto seguendo un corso per ottenere il CESS tramite la giuria centrale."
+                },
+                {
+                    "name": "Gestione",
+                    "image": "/assets/compétences/gestion.png",
+                    "description": "Il Certificato di Conoscenza di Base della Gestione (CCGB) è un diploma belga che valida competenze fondamentali in gestione, come contabilità, marketing e gestione delle risorse umane. È rivolto agli adulti che desiderano rafforzare le loro conoscenze in gestione per migliorare la loro occupabilità o riconvertirsi professionalmente. L'ho ottenuto nel 2015 all'Athénée Royale Orsini Dewerpe di Jumet."
+                },
+                {
+                    "name": "VCA",
+                    "image": "/assets/compétences/security.png",
+                    "description": "Il VCA (Vijfde Certificaat Aansluiting) è un certificato belga che attesta le competenze in materia di sicurezza sui cantieri. È destinato ai lavoratori del settore delle costruzioni e dell'industria, con l'obiettivo di garantire che conoscano i principi di sicurezza e possano identificare i rischi nel loro ambiente di lavoro. L'ho ottenuto nel 2018 con Mordant et Fils."
+                },
+                {
+                    "name": "Patente B",
+                    "image": "/assets/compétences/permis.png",
+                    "description": "La patente B è la patente di guida standard in Belgio, che consente di guidare veicoli passeggeri (auto) con un peso totale non superiore a 3.500 kg e in grado di trasportare fino a nove persone. Si ottiene dopo aver superato un esame teorico e pratico, attestando le competenze necessarie per una guida sicura. L'ho ottenuta nel 2023."
+                },
+                {
+                    "name": "Codecademy",
+                    "image": "/assets/codecademy.svg",
+                    "description": "Le certificazioni Codecademy convalidano le competenze acquisite in vari campi della programmazione e dello sviluppo web. Coprono argomenti come HTML, CSS, JavaScript, Python e molte altre tecnologie. Queste certificazioni si ottengono dopo aver completato corsi interattivi e superato progetti pratici, dimostrando la padronanza di concetti chiave in ogni campo. Ne ho ottenute 13 quest'anno."
+                }
+            ]
         },
         {
-            "category": "Sviluppo Web & Software",
-            "icon": "🌐", 
-            "items": ["Front-end (React, SCSS)", "Back-end (Node.js, Express, MariaDB, MySQL)", "API REST"]
+            "category": "Linguaggi & Tecnologie",
+            "icon": "💻",
+            "items": [
+                {
+                    "name": "React",
+                    "image": "/assets/compétences/react.png",
+                    "description": "React è una libreria JavaScript open-source sviluppata da Facebook, utilizzata per costruire interfacce utente dinamiche e interattive, principalmente per applicazioni web. React consente la creazione di componenti riutilizzabili che gestiscono il proprio stato, rendendo più semplice lo sviluppo di applicazioni complesse e ad alte prestazioni. L'ho utilizzato in molti progetti, come questo portfolio, e continuo a specializzarmi in esso perché mi piace molto il flusso di lavoro di React."
+                },
+                {
+                    "name": "CSS/Sass/SCSS",
+                    "image": "/assets/compétences/css.png",
+                    "description": "CSS, SASS e SCSS sono tecnologie utilizzate per stilizzare pagine web. CSS (Cascading Style Sheets) definisce lo stile degli elementi HTML. SASS (Syntactically Awesome Style Sheets) e SCSS (Sassy CSS) sono estensioni di CSS che aggiungono funzionalità avanzate come variabili, cicli e funzioni per rendere il codice più modulare e riutilizzabile. SCSS è una sintassi di SASS più vicina al CSS classico."
+                },
+                {
+                    "name": "TypeScript",
+                    "image": "/assets/compétences/typescript.png",
+                    "description": "TypeScript è un superset di JavaScript che aggiunge tipi statici e funzionalità orientate agli oggetti al linguaggio. Consente di rilevare errori durante la compilazione, migliorando la robustezza del codice. TypeScript viene poi compilato in JavaScript, rendendolo compatibile con tutti i browser. È particolarmente utilizzato in progetti complessi e grandi applicazioni web per garantire una migliore gestione del codice. Sto ancora imparando a usarlo e utilizzerò solo TypeScript per le mie future applicazioni web."
+                },
+                {
+                    "name": "PHP",
+                    "image": "/assets/compétences/php.png",
+                    "description": "PHP è un linguaggio di programmazione lato server principalmente utilizzato per lo sviluppo web. Consente la creazione di siti web dinamici generando contenuti HTML in tempo reale. PHP è ampiamente integrato con database, in particolare MySQL, per gestire e visualizzare dati dinamici. Essendo open-source, è popolare per la sua efficienza, semplicità e vasto ecosistema di framework e librerie. Lo uso per i miei backend (recupero dati da database o API) in progetti come il Pokedex."
+                },
+                {
+                    "name": "SQL",
+                    "image": "/assets/compétences/sql.png",
+                    "description": "SQL (Structured Query Language) è un linguaggio utilizzato per gestire e interagire con database relazionali. Consente operazioni come la creazione, modifica, eliminazione e interrogazione dei dati. SQL è essenziale per lavorare con database come MySQL, PostgreSQL o SQLite ed è ampiamente utilizzato nelle applicazioni web per archiviare e recuperare informazioni. Ho principalmente utilizzato MariaDB e phpMyAdmin, ma sono aperto al cambiamento."
+                },
+                {
+                    "name": "Java",
+                    "image": "/assets/compétences/java.png",
+                    "description": "Java è un linguaggio di programmazione orientato agli oggetti che consente la creazione di applicazioni robuste e ad alte prestazioni. È portatile, il che significa che lo stesso codice può essere eseguito su diverse piattaforme senza modifiche. Inoltre, Java è ampiamente utilizzato per lo sviluppo di applicazioni web, mobili e aziendali. È il mio linguaggio preferito per tutte le applicazioni non web."
+                },
+                {
+                    "name": "Spring Boot",
+                    "image": "/assets/compétences/springboot.png",
+                    "description": "Spring Boot è un framework Java open-source che semplifica lo sviluppo di applicazioni riducendo le configurazioni necessarie. Consente la creazione di applicazioni autonome e pronte per il deployment, con un ambiente di sviluppo rapido e una moltitudine di funzionalità integrate. Spring Boot è ideale per lo sviluppo di microservizi grazie alla sua semplicità e flessibilità."
+                }
+            ]
         },
         {
             "category": "Strumenti & Ambienti",
-            "icon": "🛠️", 
-            "items": ["Git, GitHub", "VSCode, Bash, Linux, Windows", "Netlify (deploy)"]
+            "icon": "🛠️",
+            "items": [
+                {
+                    "name": "Node.js",
+                    "image": "/assets/compétences/node.png",
+                    "description": "Node.js è un ambiente di esecuzione JavaScript lato server che consente di eseguire codice JavaScript al di fuori di un browser. È costruito sul motore V8 di Google Chrome e utilizza un modello di I/O non bloccante e orientato agli eventi, rendendolo molto performante per applicazioni in tempo reale e ad alto utilizzo di I/O. Node.js è spesso utilizzato per creare server web, API e applicazioni di rete."
+                },
+                {
+                    "name": "Git/GitHub",
+                    "image": "/assets/compétences/github.png",
+                    "description": "GitHub è una piattaforma di sviluppo collaborativo che consente di ospitare e gestire progetti di sviluppo software. Facilita il controllo delle versioni utilizzando Git, permettendo agli sviluppatori di tracciare le modifiche, collaborare con altri e gestire diverse versioni del loro codice. Inoltre, GitHub offre funzionalità per la revisione del codice, l'integrazione continua e la documentazione dei progetti."
+                },
+                {
+                    "name": "Bash",
+                    "image": "/assets/compétences/bash.png",
+                    "description": "Bash (Bourne Again SHell) è un interprete di comandi e un linguaggio di scripting utilizzato principalmente su sistemi Unix e Linux. Consente di automatizzare attività ripetitive e gestire file, processi e utenti tramite script. Bash è spesso utilizzato negli script di avvio, nell'amministrazione di sistema e nella gestione dei server."
+                },
+                {
+                    "name": "VS Code",
+                    "image": "/assets/compétences/vscode.png",
+                    "description": "Visual Studio Code (VS Code) è un editor di codice gratuito e open-source sviluppato da Microsoft. È noto per la sua leggerezza e velocità, offrendo una moltitudine di funzionalità come debug, completamento automatico, evidenziazione della sintassi e integrazione del controllo delle versioni tramite Git. Grazie al suo vasto ecosistema di estensioni, può essere personalizzato per soddisfare le esigenze specifiche di vari linguaggi di programmazione e framework. Attualmente lo uso, ma potrei passare a IntelliJ in futuro."
+                },
+                {
+                    "name": "Netlify",
+                    "image": "/assets/compétences/netlify.png",
+                    "description": "Netlify è una piattaforma di deployment e hosting per applicazioni web moderne, progettata per facilitare la messa online di progetti statici e JAMstack (JavaScript, API e Markup). Offre integrazione continua, consegna continua automatizzata (CI/CD) e funzionalità avanzate come reindirizzamenti, moduli e funzioni serverless. Netlify semplifica notevolmente il processo di deployment, permettendo agli sviluppatori di concentrarsi sulla creazione di contenuti e funzionalità piuttosto che sull'infrastruttura."
+                },
+                {
+                    "name": "Linux",
+                    "image": "/assets/compétences/linux.png",
+                    "description": "Linux è un sistema operativo open-source basato su Unix, ampiamente utilizzato su server, desktop, dispositivi mobili e altro ancora. È apprezzato per la sua sicurezza, stabilità e flessibilità, offrendo agli utenti e agli sviluppatori il pieno controllo sul sistema. Linux dispone di un vasto ecosistema di distribuzioni, come Ubuntu, Fedora e Debian, ciascuna adatta a diverse esigenze e preferenze degli utenti."
+                },
+                {
+                    "name": "Chatgpt",
+                    "image": "/assets/compétences/gpt.png",
+                    "description": "Il prompt engineering è la pratica di progettare e formulare richieste precise per interagire efficacemente con modelli di intelligenza artificiale (IA), come ChatGPT. Lo uso per attività ripetitive e per guidarmi nella risoluzione di alcuni problemi. Mi aiuta anche a mettere le cose in prospettiva a volte."
+                }
+            ]
         },
         {
-            "category": "Sicurezza & Buone pratiche",
-            "icon": "🔒", 
-            "items": ["Consapevolezza della sicurezza informatica", "Validazione degli input", "Gestione degli accessi"]
-        },
-        {
-            "category": "Competenze trasversali",
-            "icon": "🤝", 
-            "items": ["Rigorosità e precisione", "Lavoro di squadra", "Gestione del tempo"]
+            "category": "Soft Skills",
+            "icon": "🤝",
+            "items": [
+                {
+                    "name": "Curiosità",
+                    "image": "/assets/compétences/curiosité.png",
+                    "description": "La curiosità mi ha accompagnato in ogni fase della mia vita, come dimostra il mio curriculum ricco di esperienze varie. Ho cercato ovunque prima di trovare ciò che mi piace davvero, e ora ne ho fatto la mia professione."
+                },
+                {
+                    "name": "Comunicazione",
+                    "image": "/assets/compétences/communication.png",
+                    "description": "La comunicazione è una competenza che ho sviluppato nel settore della ristorazione e si è rivelata un'abilità molto importante in tutti i ruoli che ho ricoperto."
+                },
+                {
+                    "name": "Intuizione",
+                    "image": "/assets/compétences/openMind.png",
+                    "description": "Senza apertura mentale si perdono molte cose nella vita e si rimane bloccati in una spirale senza fine. Do sempre una possibilità a un'idea prima di scartarla, perché anche da un'idea sbagliata può nascere qualcosa di meraviglioso. Ad esempio, la crisi sanitaria del 2019 mi ha permesso di scoprire lo sviluppo web, e ora è la mia professione."
+                },
+                {
+                    "name": "Proattività",
+                    "image": "/assets/compétences/proactive.png",
+                    "description": "Affinché un compito venga svolto correttamente, è necessario seguire la procedura appresa, ma per innovare bisogna appropriarsene e trarne qualcosa di più. È mantenendo una mente aperta e proattiva che possiamo dare il meglio di noi stessi e del nostro lavoro."
+                },
+                {
+                    "name": "Adattabilità",
+                    "image": "/assets/compétences/adapt.png",
+                    "description": "Se le mie numerose esperienze, a volte in brevi periodi, mi hanno insegnato qualcosa, è ad adattarmi a nuove situazioni. In ogni lavoro che ho svolto, ci sono state nuove sfide che mi hanno aiutato a crescere un po' ogni volta."
+                }
+            ]
         }
     ]
 }
+
