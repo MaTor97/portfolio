@@ -18,7 +18,7 @@ const Nav = ({language, setPage, setCount}) => {
                     ? 'HOME' 
                     : 'INIZIO'}
                 </li>
-                <li id='skills' onClick={() => setPage('skills')}>
+                <li id='skills' onClick={() => changePage('skills')}>
                     {language === 'FR'
                     ? 'COMPÉTENCES'
                     : language === 'EN'

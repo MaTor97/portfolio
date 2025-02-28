@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "image": "/assets/SolarSystem.png",
+            "image": "/assets/projects/SolarSystem.webp",
             "title": {
                 "FR": "Système Solaire",
                 "EN": "Solar System",
@@ -17,7 +17,7 @@
             "demo": "https://solar-sy.netlify.app"
         },
         {
-            "image": "/assets/pokedex.png",
+            "image": "/assets/projects/pokedex.webp",
             "title": {
                 "FR": "Pokedex",
                 "EN": "Pokedex",
@@ -33,7 +33,7 @@
             "demo": "https://pokedex-becode.netlify.app"
         },
         {
-            "image": "/assets/taskManager.png",
+            "image": "/assets/projects/taskManager.webp",
             "title": {
                 "FR": "Agenda",
                 "EN": "Task Manager",
