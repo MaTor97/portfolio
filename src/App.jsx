@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
 import Content from './components/content/Content'
+import Footer from './components/footer/Footer'
 import projectsData from '../public/data/projects.json'
 import experienceData from '../public/data/experiences.json'
 import skillsData from "../public/data/skills.json"
@@ -14,9 +14,8 @@ function App() {
 
   return (
     <>
-      <Header language={language} setLanguage={setLanguage} setPage={setPage}/>
+      <Header language={language} setLanguage={setLanguage} setPage={setPage} setCount={setCount}/>
       <div id="container">
-        <Nav language={language} setPage={setPage} setCount={setCount}/>
         {page !== 'projects'
           ? null
           : count === 0
@@ -85,6 +84,7 @@ function App() {
           ? <button style={{opacity: 0}}>{'>'}</button>
           : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
       </div>
+      <Footer />
     </>
   )
 }

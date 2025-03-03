@@ -1,32 +1,24 @@
 .home {
     display: flex;
-    flex-direction: column;
-    padding: 50px;
-    align-items: center;
-    height: 100%;
-    background-color: #2ecc71;
-    font-size: 28px;
-    border: 2px solid #000;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+
+
+    img {
+        height: 22rem;
+        width: auto;
+    }
 
     p {
-        height: 100%;
-        border: 2px solid #000;
-        background-color: #f1c40f;
-        padding: 10px;
         font-family: 'Cedarville Cursive', cursive;
-        font-size: 30px;
+        font-size: 1.5rem;
+        margin: 1.5rem;
+    }
 
-        span {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 900;
-            cursor: pointer;
-        }
-
-        img{
-            position: absolute;
-            top: 572px;
-            transform: rotate(-45deg);
-        }
+    span {
+        color: #FF7300;
+        cursor: pointer;
     }
 }

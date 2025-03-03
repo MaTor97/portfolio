@@ -5,17 +5,20 @@ import {GithubSVG, VisitSVG} from '../../../../public/data/svg';
 const ProjectCard = ({ project, language }) => {
     return (
         <div className="card">
-            <div className="project-card">
-                <a 
+            <a 
                     className="circle" 
                     href={project.demo} 
                     target="_blank" 
                      rel="noopener noreferrer"
                     >
-                    <img src={project.image} alt={project.title[language]} />
+                    <picture>
+                        <source srcSet={project.image} type="image/webp" />
+                        <img src={project.image2} alt={project.title[language]} loading="lazy" />
+                    </picture>
                 </a>
+                
+            <div className="project-card"> 
                 <div className="project-card-text">
-                    <h3>{project.title[language]}</h3>
                     <div className="project-card__links">
                         <a className="circle" href={project.github} target="_blank" rel="noreferrer">
                             <GithubSVG />
@@ -24,10 +27,15 @@ const ProjectCard = ({ project, language }) => {
                             <VisitSVG />
                         </a>
                     </div>
-                    <p>{project.technologies.join(', ')}</p>
+                    
                 </div>
-            </div>
-            <p>{project.description[language]}</p>
+                <p id='description'>
+                    
+                    {project.description[language]}
+                </p>
+                <div className="tech">{project.technologies.join(', ')} { }</div>
+            </div>  
+            
         </div>
     );
 }

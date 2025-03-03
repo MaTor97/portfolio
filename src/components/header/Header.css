@@ -1,51 +1,23 @@
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid black;
-    padding: 30px;
-    padding-top: 40px;
-    font-family: 'source code pro', monospace;
-    background-color: #3498db;
-    height: 20vh;
-
-    h1 {
-        border: 2px solid black;
-        background-color: white;
-        padding: 10px;
-        width: 398px;
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .circle {
-        width: 95px;
-        height: 95px;
-        border-radius: 50%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid black;
-        padding: 22px;
-        color: black;
-        cursor: pointer;
-    }
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid #007BFF;
 
     nav {
+
         ul {
             display: flex;
-            justify-content: space-between;
-            padding: 5px;
-            border: 2px solid black;
-            height: 100%;
-            align-items: center;
-            background-color: white;
-            
+
             li {
-                margin: 5px;
-                font-weight: 700;
-                cursor: pointer;
+                margin: 0 25px;
+                font-family: 'source code pro', sans-serif;
             }
         }
+    }
+
+    .activeLanguage {
+        color: #ff7300;
     }
 }

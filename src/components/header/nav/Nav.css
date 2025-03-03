@@ -1,0 +1,13 @@
+nav {
+    ul {
+        display: flex;
+
+        li {
+            cursor: pointer;
+        }
+        
+        .active {
+            color: #FF7300;
+        }
+    }
+}

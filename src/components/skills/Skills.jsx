@@ -46,7 +46,12 @@ const Skills = ({ skillset, language }) => {
                     :                
                         <>
                             <h3>Compétences</h3>
-                            <p>Cliquez sur l'icône pour sélectionner une compétence</p>
+                            <ul>
+                                {skillset.items.map((item, index) => (
+                                    <li key={index}>{item.name}</li>
+                                ))}
+                            </ul>
+                            <p id="feet">Cliquez sur l'icône pour sélectionner une compétence</p>
                         </>
                  : language === 'EN' ? 
                     selectedItem ? 
@@ -57,7 +62,12 @@ const Skills = ({ skillset, language }) => {
                     :
                         <>
                             <h3>Skills</h3>
-                            <p>Click on the icon to select a skill</p>
+                            <ul>
+                                {skillset.items.map((item, index) => (
+                                    <li key={index}>{item.name}</li>
+                                ))}
+                            </ul>
+                            <p id="feet">Click on the icon to select a skill</p>
                         </>
                  : language === 'IT' ? 
                     selectedItem ? 
@@ -68,7 +78,12 @@ const Skills = ({ skillset, language }) => {
                     :
                         <>
                             <h3>Competenze</h3>
-                            <p>Fai clic sull'icona per selezionare una competenza</p>
+                            <ul>
+                                {skillset.items.map((item, index) => (
+                                    <li key={index}>{item.name}</li>
+                                ))}
+                            </ul>
+                            <p id="feet">Fai clic sull'icona per selezionare una competenza</p>
                         </>
                 : null}
             </div>

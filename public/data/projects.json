@@ -2,6 +2,7 @@
     "projects": [
         {
             "image": "/assets/projects/SolarSystem.webp",
+            "image2": "/assets/projects/SolarSystem.png",
             "title": {
                 "FR": "Système Solaire",
                 "EN": "Solar System",
@@ -18,6 +19,7 @@
         },
         {
             "image": "/assets/projects/pokedex.webp",
+            "image2": "/assets/projects/pokedex.png",
             "title": {
                 "FR": "Pokedex",
                 "EN": "Pokedex",
@@ -34,6 +36,7 @@
         },
         {
             "image": "/assets/projects/taskManager.webp",
+            "image2": "/assets/projects/taskManager.png",
             "title": {
                 "FR": "Agenda",
                 "EN": "Task Manager",

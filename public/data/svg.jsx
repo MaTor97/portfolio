@@ -50,7 +50,17 @@ export const GmailSVG = () => {
 
 export const VisitSVG = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 300 300" xmlSpace="preserve">
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            xmlnsXlink="http://www.w3.org/1999/xlink" 
+            fill="currentColor" 
+            height="800px" 
+            width="800px" 
+            version="1.1" 
+            id="Layer_1" 
+            viewBox="0 0 300 300" 
+            xmlSpace="preserve"
+            >
             <g>
 	            <g>
 		            <g>
@@ -82,7 +92,7 @@ export const CodecademySVG = () => {
     return (
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            fill="#000000" 
+            fill="currentColor"
             width="800px" 
             height="800px" 
             viewBox="0 0 24 24" 

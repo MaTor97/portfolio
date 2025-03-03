@@ -67,7 +67,7 @@
             }, {
                 "name": "Git/Github",
                 "image": "/assets/compétences/github.png",
-                "description": "GitHub est une plateforme de développement collaborative qui permet de héberger et gérer des projets de développement de logiciels. Elle facilite le contrôle de version en utilisant Git, permettant aux développeurs de suivre les modifications, de collaborer avec d'autres, et de gérer les différentes versions de leur code. En plus de cela, GitHub offre des fonctionnalités pour la revue de code, l'intégration continue et la documentation des projets."
+                "description": "GitHub est une plateforme de développement collaborative qui permet d'héberger et gérer des projets de développement de logiciels. Elle facilite le contrôle de version en utilisant Git, permettant aux développeurs de suivre les modifications, de collaborer avec d'autres, et de gérer les différentes versions de leur code. En plus de cela, GitHub offre des fonctionnalités pour la revue de code, l'intégration continue et la documentation des projets."
             }, {
                 "name": "Bash",
                 "image": "/assets/compétences/bash.png",

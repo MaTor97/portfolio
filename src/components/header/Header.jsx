@@ -1,25 +1,38 @@
-import React from "react";
+import { act, React, useState } from "react";
 import './Header.css';
-import { GithubSVG, LinkedinSVG, CodecademySVG } from '../../../public/data/svg';
+import Nav from './nav/Nav'
 
-function Header({setLanguage, setPage}) {
+function Header({language, setLanguage, setPage, setCount}) {
+    const [activeLanguage, setActiveLanguage] = useState("FR");
+
+    const changeLanguage = (language) => {
+        setLanguage(language)
+        setActiveLanguage(language)
+    }
+
     return (
         <header>
-            <h1>Matteo Tortora</h1>
-            <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
-                <GithubSVG />
-            </a>
-            <a className="circle" href="https://www.linkedin.com/in/matteo-tortora/" target="_blank" rel="noreferrer">
-                <LinkedinSVG />
-            </a>
-            <a className="circle" href="https://www.codecademy.com/profiles/arc9207090463" target="_blank" rel="noreferrer">
-                <CodecademySVG />
-            </a>
-            <nav>
+            <Nav language={language} setPage={setPage} setCount={setCount}/>
+            <nav id="headernav">
                 <ul>
-                    <li id='FR' onClick={() => setLanguage('FR')}>FR</li>
-                    <li id='EN' onClick={() => setLanguage('EN')}>EN</li>
-                    <li id='IT' onClick={() => setLanguage('IT')}>IT</li>
+                    <li 
+                        id='FR' 
+                        onClick={() => changeLanguage('FR')}
+                        className={activeLanguage === "FR" ? "activeLanguage" : ""}
+                        >FR
+                    </li>
+                    <li 
+                        id='EN' 
+                        onClick={() => changeLanguage('EN')}
+                        className={activeLanguage === "EN" ? "activeLanguage" : ""}
+                        >EN
+                    </li>
+                    <li 
+                        id='IT' 
+                        onClick={() => changeLanguage('IT')}
+                        className={activeLanguage === "IT" ? "activeLanguage" : ""}
+                        >IT
+                    </li>
                 </ul>
             </nav>
         </header>
