@@ -1,6 +1,6 @@
 import React from "react";
 import './Content.css';
-import ProjectCard from "../projects/projetcCard/ProjectCard";
+import ProjectCard from "../projects/ProjectCard";
 import projectsData from "../../../public/data/projects.json";
 import experienceData from "../../../public/data/experiences.json"
 import skillsData from "../../../public/data/skills.json"
