@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Header from './components/header/Header'
-import Content from './components/content/Content'
-import Footer from './components/footer/Footer'
+import Header from './components/Header'
+import Content from './components/Content'
+import Footer from './components/Footer'
 import projectsData from '../public/data/projects.json'
 import experienceData from '../public/data/experiences.json'
 import skillsData from "../public/data/skills.json"
-import './App.css'
+import './styles/main.scss';
 
 function App() {
   const [language, setLanguage] = useState('FR');

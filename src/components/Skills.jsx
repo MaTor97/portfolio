@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './Skills.css';
+import '../styles/Skills.scss';
 
 const Skills = ({ skillset, language }) => {
     const [isActive, setIsActive] = useState(false);

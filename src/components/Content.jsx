@@ -1,13 +1,13 @@
 import React from "react";
-import './Content.css';
-import ProjectCard from "../projects/ProjectCard";
-import projectsData from "../../../public/data/projects.json";
-import experienceData from "../../../public/data/experiences.json"
-import skillsData from "../../../public/data/skills.json"
-import Home from "../home/Home";
-import Skills from "../skills/Skills"
-import Contact from "../contact/Contact";
-import Experiences from "../cv/Cv";
+import "../styles/Content.scss";
+import ProjectCard from "./ProjectCard";
+import projectsData from "../../public/data/projects.json";
+import experienceData from "../../public/data/experiences.json"
+import skillsData from "../../public/data/skills.json"
+import Home from "./Home";
+import Skills from "./Skills"
+import Contact from "./Contact";
+import Experiences from "./Cv";
 
 const Content = ({language, page, setpage, count}) => {
     

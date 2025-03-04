@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import './Nav.css';
+import '../styles/Nav.scss';
 
 const Nav = ({ language, setPage, setCount }) => {
     const [active, setActive] = useState("home");

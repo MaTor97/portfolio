@@ -1,6 +1,6 @@
 import React from "react";
-import './ProjectCard.css';
-import {GithubSVG, VisitSVG} from '../../../public/data/svg';
+import '../styles/ProjectCard.scss';
+import {GithubSVG, VisitSVG} from '../../public/data/svg';
 
 const ProjectCard = ({ project, language }) => {
     return (

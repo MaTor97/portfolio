@@ -1,6 +1,6 @@
-import { act, React, useState } from "react";
-import './Header.css';
-import Nav from './nav/Nav'
+import { React, useState } from "react";
+import '../styles/Header.scss';
+import Nav from './Nav'
 
 function Header({language, setLanguage, setPage, setCount}) {
     const [activeLanguage, setActiveLanguage] = useState("FR");

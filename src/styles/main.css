@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* Reset CSS - Base */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Jacquard+12&family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300..800&family=Source+Code+Pro:wght@200..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  background-color: black;
+  color: #c5c5c5;
+}
+
+/* Suppression des styles par défaut pour les éléments de liste */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Suppression des bordures et arrière-plans par défaut */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Suppression des marges de certains éléments */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  height: 75.5vh;
+  justify-content: center;
+  background-image: url("/public/assets/earth.webp");
+  align-items: center;
+}
+#container h2 {
+  position: absolute;
+  top: 6rem;
+  font-family: "Cedarville Cursive", cursive;
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+#container button {
+  font-size: 3rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-family: "jacquard 12", sans-serif;
+  transition: all 0.3s ease;
+  border-radius: 70%;
+  padding: 10px;
+  color: #FF7300;
+}
+
+svg, img {
+  width: 1.7rem;
+  height: 1.7rem;
+}/*# sourceMappingURL=main.css.map */
