@@ -2,15 +2,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
     border-bottom: 1px solid $borders;
 
-    .burgerMenu {
-        display: none;
-    }
-
     nav {
-
         ul {
             display: flex;
 
@@ -23,19 +18,5 @@ header {
 
     .activeLanguage {
         color: $wordSecondary;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    header {
-        .burgerMenu {
-            position: absolute;
-            display: block;
-    
-        }
-    
-        .originalNav {
-            display: none;
-        }
     }
 }

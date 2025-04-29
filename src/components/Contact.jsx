@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
-import '../styles/Contact.scss';
 
 // Fonction pour échapper les caractères spéciaux et éviter le XSS
 const sanitizeInput = (input) => {

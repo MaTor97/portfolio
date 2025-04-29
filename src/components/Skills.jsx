@@ -1,21 +1,55 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Skills.scss';
 
 const Skills = ({ skillset, language }) => {
     const [isActive, setIsActive] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 
-    const toggleMenu = () => {
-        setIsActive(!isActive);
-    };
-
-    const handleItemClick = (item) => {
-        setSelectedItem(item);
-    };
+    const toggleMenu = () => setIsActive(!isActive);
+    const handleItemClick = (item) => setSelectedItem(item);
 
     useEffect(() => {
-        setSelectedItem(null);
+        setSelectedItem(null); // Reset on language change
     }, [language]);
+
+    const languageLabels = {
+        FR: {
+            title: "Compétences",
+            instruction: "Cliquez sur l'icône pour sélectionner une compétence"
+        },
+        EN: {
+            title: "Skills",
+            instruction: "Click on the icon to select a skill"
+        },
+        IT: {
+            title: "Competenze",
+            instruction: "Fai clic sull'icona per selezionare una competenza"
+        }
+    };
+
+    const renderContent = () => {
+        const { title, instruction } = languageLabels[language] || languageLabels.FR;
+
+        if (selectedItem) {
+            return (
+                <>
+                    <h3>{selectedItem.name}</h3>
+                    <p dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
+                </>
+            );
+        }
+
+        return (
+            <>
+                <h3>{title}</h3>
+                <ul>
+                    {skillset.items.map((item, index) => (
+                        <li key={index}>{item.name}</li>
+                    ))}
+                </ul>
+                <p id="feet">{instruction}</p>
+            </>
+        );
+    };
 
     return (
         <div className="skillset">
@@ -37,55 +71,7 @@ const Skills = ({ skillset, language }) => {
             </div>
 
             <div className="text">
-                { language === 'FR' ? 
-                    selectedItem ? 
-                        <>
-                            <h3>{selectedItem.name}</h3>
-                            <p dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
-                        </>
-                    :                
-                        <>
-                            <h3>Compétences</h3>
-                            <ul>
-                                {skillset.items.map((item, index) => (
-                                    <li key={index}>{item.name}</li>
-                                ))}
-                            </ul>
-                            <p id="feet">Cliquez sur l'icône pour sélectionner une compétence</p>
-                        </>
-                 : language === 'EN' ? 
-                    selectedItem ? 
-                        <>
-                            <h3>{selectedItem.name}</h3>
-                            <p dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
-                        </>
-                    :
-                        <>
-                            <h3>Skills</h3>
-                            <ul>
-                                {skillset.items.map((item, index) => (
-                                    <li key={index}>{item.name}</li>
-                                ))}
-                            </ul>
-                            <p id="feet">Click on the icon to select a skill</p>
-                        </>
-                 : language === 'IT' ? 
-                    selectedItem ? 
-                        <>
-                            <h3>{selectedItem.name}</h3>
-                            <p dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
-                        </>
-                    :
-                        <>
-                            <h3>Competenze</h3>
-                            <ul>
-                                {skillset.items.map((item, index) => (
-                                    <li key={index}>{item.name}</li>
-                                ))}
-                            </ul>
-                            <p id="feet">Fai clic sull'icona per selezionare una competenza</p>
-                        </>
-                : null}
+                {renderContent()}
             </div>
         </div>
     );

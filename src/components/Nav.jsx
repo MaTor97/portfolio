@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import '../styles/Nav.scss';
 
 const Nav = ({ language, setPage, setCount }) => {
     const [active, setActive] = useState("home");
@@ -43,15 +42,7 @@ const Nav = ({ language, setPage, setCount }) => {
                     {language === 'FR' ? 'EXPÉRIENCES' 
                     : language === 'EN' ? 'EXPERIENCES' 
                     : 'ESPERIENZE'}
-                </li>
-
-                <li id='contact' 
-                    onClick={() => changePage('contact')}  
-                    className={active === "contact" ? "active" : ""}>
-                    {language === 'FR' ? 'CONTACT' 
-                    : language === 'EN' ? 'CONTACT' 
-                    : 'CONTATTO'}
-                </li>              
+                </li>            
             </ul>
         </nav>
     );

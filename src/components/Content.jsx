@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Content.scss";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../../public/data/projects.json";
 import experienceData from "../../public/data/experiences.json"

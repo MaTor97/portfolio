@@ -1,0 +1,51 @@
+.exp {
+    background-color: $primaryTransparent;
+    min-height: 73vh;
+
+
+    h3 {
+        text-align: center;
+        color: $borders;
+    }
+    
+    .content {
+        .desc {
+            .imgContainer {
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            
+            p {
+                padding: .5rem 1rem;
+            }
+        }
+
+        ul {
+            display: flex;
+            background-color: $borders;
+            margin: .5rem 0;
+            overflow: scroll;
+            scrollbar-width: none;
+            align-items: center;
+
+            li {
+                margin: .5rem 1rem;
+                font-weight: bold;
+                width: 100%;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .foot {
+        color: $wordSecondary;
+        margin: auto;
+        text-align: center;
+    }  
+}
+

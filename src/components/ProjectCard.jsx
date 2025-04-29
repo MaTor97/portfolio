@@ -1,5 +1,4 @@
 import React from "react";
-import '../styles/ProjectCard.scss';
 import {GithubSVG, VisitSVG} from '../../public/data/svg';
 
 const ProjectCard = ({ project, language }) => {
@@ -29,8 +28,7 @@ const ProjectCard = ({ project, language }) => {
                     </div>
                     
                 </div>
-                <p id='description'>
-                    
+                <p id='description'> 
                     {project.description[language]}
                 </p>
                 <div className="tech">{project.technologies.join(', ')} { }</div>

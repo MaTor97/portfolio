@@ -8,7 +8,6 @@
     height: 100%;
     box-shadow: 0 2px 5px $shadow;
     border-radius: .5rem;
-    background-color: $primaryTransparent;
 
 
     form {
@@ -32,13 +31,13 @@
             border: 1px solid $borders;
             border-radius: .2rem;
             padding: 10px;
+            background-color: $primaryColor;
         }        
 
         input::placeholder {
             color: $wordPrimary;
             font-family: 'source code pro', monospace;
             color: $wordSecondary;
-            background-color: $primaryColor;
         }
     }
 
@@ -59,12 +58,7 @@
     }
     
     .buttz {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 10px;
-        width: 600px;
-        height: 100px;
+        padding: .7rem;
         border-radius: .2rem;
         margin: auto;
         border: 1px solid $borders;     
@@ -73,6 +67,8 @@
             button {
                 cursor: pointer;
                 color: $wordPrimary;
+                font-weight: 900;
+                margin: .2rem;
             }
         
             button:hover {

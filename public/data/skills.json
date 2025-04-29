@@ -25,7 +25,7 @@
                 "description": "Les certifications Codecademy valident les compétences acquises dans divers domaines de la programmation et du développement web. Elles couvrent des sujets comme HTML, CSS, JavaScript, Python, et bien d'autres technologies. Ces certifications sont obtenues après avoir suivi des cours interactifs et réussi des projets pratiques, démontrant ainsi la maîtrise de concepts clés dans chaque domaine. J'en ai obtenu 13 cette année."            }]
         },
         {
-            "category": "Langages & Technologies",
+            "category": "Langages & Tech",
             "icon": "💻", 
             "items": [{
                 "name": "React",
@@ -58,7 +58,7 @@
             }]
         },
         {
-            "category": "Outils & Environnements",
+            "category": "Outils",
             "icon": "🛠️", 
             "items": [ {
                 "name": "Node.js",

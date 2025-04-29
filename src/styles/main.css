@@ -18,7 +18,7 @@ body {
 body {
   line-height: 1.5;
   background-color: black;
-  color: #c5c5c5;
+  color: rgb(192, 192, 192);
 }
 
 /* Suppression des styles par défaut pour les éléments de liste */
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 #container button {
   font-size: 3rem;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
   font-family: "jacquard 12", sans-serif;
   transition: all 0.3s ease;
@@ -91,4 +91,496 @@ h1, h2, h3, h4, h5, h6 {
 svg, img {
   width: 1.7rem;
   height: 1.7rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 15px;
+  flex-grow: 1;
+  justify-content: space-between;
+  height: 100%;
+}
+.contact-container .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-container .infos input {
+  font-size: 1rem;
+  border: 1px solid #007BFF;
+  border-radius: 0.2rem;
+  padding: 10px;
+}
+.contact-container .infos input::-moz-placeholder {
+  color: rgb(192, 192, 192);
+  font-family: "source code pro", monospace;
+  color: #FF7300;
+  background-color: black;
+}
+.contact-container .infos input::placeholder {
+  color: rgb(192, 192, 192);
+  font-family: "source code pro", monospace;
+  color: #FF7300;
+  background-color: black;
+}
+.contact-container textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  height: 120px;
+  resize: none;
+  border: 1px solid #007BFF;
+  background-color: black;
+}
+.contact-container textarea::-moz-placeholder {
+  color: rgb(192, 192, 192);
+  font-family: "source code pro", monospace;
+  color: #FF7300;
+}
+.contact-container textarea::placeholder {
+  color: rgb(192, 192, 192);
+  font-family: "source code pro", monospace;
+  color: #FF7300;
+}
+.contact-container .buttz {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 600px;
+  height: 100px;
+  border-radius: 0.2rem;
+  margin: auto;
+  border: 1px solid #007BFF;
+  background-color: black;
+}
+.contact-container .buttz button {
+  cursor: pointer;
+  color: rgb(192, 192, 192);
+}
+.contact-container .buttz button:hover {
+  color: #FF7300;
+}
+
+main {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "source code pro", monospace;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.exp h3 {
+  text-align: center;
+  height: 52px;
+  width: 100%;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.5rem;
+  background-color: black;
+  border-bottom: 1px solid #007BFF;
+}
+.exp .content {
+  display: flex;
+  justify-content: space-around;
+}
+.exp .content .desc .imgContainer {
+  width: 662px;
+  height: 174px;
+}
+.exp .content .desc .imgContainer img {
+  height: 100%;
+  width: 100%;
+}
+.exp .content .desc p {
+  font-family: "source code pro", monospace;
+  font-size: 1.2rem;
+  padding: 20px;
+  height: 202px;
+  overflow: auto;
+  scrollbar-width: none;
+  color: rgb(192, 192, 192);
+}
+.exp .content ul {
+  min-width: 15rem;
+  height: 100%;
+  text-align: left;
+  padding: 20px;
+  height: 376px;
+  overflow: scroll;
+  scrollbar-width: none;
+  border-left: 1px solid #007BFF;
+}
+.exp .content ul li {
+  padding: 5px;
+  margin: 5px;
+  font-family: "source code pro", monospace;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FF7300;
+}
+.exp .foot {
+  height: 52px;
+  width: 100%;
+  color: #FF7300;
+  padding: 10px 50px;
+  font-family: "jacquard 12", sans-serif;
+  font-size: 25px;
+  text-align: right;
+  background-color: black;
+  border-top: 1px solid #007BFF;
+}
+
+@media (max-width: 768px) {
+  .exp {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #007BFF;
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    position: relative;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  border-bottom: 1px solid #007BFF;
+}
+header .burgerMenu {
+  display: none;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin: 0 25px;
+  font-family: "source code pro", sans-serif;
+}
+header .activeLanguage {
+  color: #FF7300;
+}
+
+@media screen and (max-width: 680px) {
+  header .burgerMenu {
+    position: absolute;
+    display: block;
+  }
+  header .originalNav {
+    display: none;
+  }
+}
+.home {
+  display: flex;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+.home p {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+.home span {
+  color: #FF7300;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .home {
+    border: 1px solid green;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul .active {
+  color: #FF7300;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: "source code pro", sans-serif;
+}
+.card a picture img {
+  width: auto;
+  height: 100%;
+}
+.card .project-card {
+  width: 40%;
+  padding: 1rem;
+}
+.card .project-card .project-card-text .project-card__links {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #007BFF;
+}
+.card .project-card .project-card-text .project-card__links a {
+  margin: 2rem;
+  color: #FF7300;
+}
+.card .project-card .project-card-text .project-card__links a img {
+  height: 3rem;
+  width: auto;
+}
+.card .project-card #description {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 12rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.card .project-card .tech {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 100%;
+  font-style: normal;
+  color: #FF7300;
+  background-color: black;
+  padding-left: 0.7rem;
+  height: 3rem;
+  font-weight: 700;
+  border-top: 1px solid #007BFF;
+}
+
+.skillset {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+.skillset .menu li {
+  border: 1px solid red;
+  position: absolute;
+  list-style: none;
+  top: 17.5rem;
+  left: 12.8rem;
+  transform-origin: 11rem;
+  transition: 1s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(10rem);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #007BFF;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.skillset .menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  transform: rotate(calc(-45deg * var(--i)));
+  transition: 0.3s;
+  background-color: #FF7300;
+  padding: 5px;
+}
+.skillset .menu li a img {
+  height: 2.2rem;
+  width: auto;
+}
+.skillset .menu .toggleContainer {
+  position: relative;
+}
+.skillset .menu .toggleContainer .toggle {
+  position: relative;
+  height: 11rem;
+  width: 11rem;
+  top: 11rem;
+  left: 30rem;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 4em;
+  font-weight: bold;
+  transition: 1.25s;
+  z-index: 4;
+}
+.skillset .active .toggle {
+  transform: rotate(360deg);
+}
+.skillset .active li {
+  transform: rotate(calc(45deg * var(--i)));
+}
+.skillset .text {
+  position: relative;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 20rem;
+  height: 17rem;
+  border-radius: 0.5rem;
+}
+.skillset .text h3 {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #007BFF;
+  background-color: black;
+  color: #FF7300;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "source code pro", sans-serif;
+  position: sticky;
+  top: 0;
+}
+.skillset .text p {
+  height: 13.55rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  padding: 0.5rem;
+  font-family: "source code pro", sans-serif;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.skillset .text ul {
+  padding: 0.5rem 3.5rem;
+  font-family: "source code pro", sans-serif;
+  height: 10.55rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.skillset .text ul li {
+  margin: 0.5rem;
+}
+.skillset .text #feet {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #007BFF;
+  background-color: black;
+  color: #FF7300;
+  font-weight: 700;
+  font-size: 0.7rem;
+  font-family: "source code pro", sans-serif;
+  height: 3.1rem;
+  position: sticky;
+  bottom: 0;
+}
+
+.burgerMenu {
+  position: relative;
+}
+
+.burgerIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+.burgerIcon div {
+  width: 30px;
+  height: 4px;
+  background: rgb(192, 192, 192);
+  transition: 0.3s;
+}
+.burgerIcon.open div:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burgerIcon.open div:nth-child(2) {
+  opacity: 0;
+}
+.burgerIcon.open div:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background: black;
+  padding: 15px;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  margin: 10px 0;
+}
+.menu ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu.show {
+  transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import '../styles/Header.scss';
+import BurgerMenu from "./BurgerMenu";
 import Nav from './Nav'
 
-function Header({language, setLanguage, setPage, setCount}) {
+function Header({setLanguage}) {
     const [activeLanguage, setActiveLanguage] = useState("FR");
 
     const changeLanguage = (language) => {
@@ -12,7 +12,6 @@ function Header({language, setLanguage, setPage, setCount}) {
 
     return (
         <header>
-            <Nav language={language} setPage={setPage} setCount={setCount}/>
             <nav id="headernav">
                 <ul>
                     <li 

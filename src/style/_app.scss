@@ -9,7 +9,6 @@
 
 html,
 body {
-  height: 100%;
   font-family: sans-serif;
 }
 
@@ -62,30 +61,41 @@ h1, h2, h3, h4, h5, h6 {
 
 #container {
   display: flex;
-  height: 75.5vh;
+  flex-direction: column;
   justify-content: center;
   background-image: url('/public/assets/earth.webp');
   align-items: center;
 
   h2 {
-    position: absolute;
-    top: 6rem;
-    font-family: 'Cedarville Cursive', cursive;
-    text-decoration: underline;
-    font-size: 1.7rem;
+    
+    font-size: 2rem;
+    margin: .5rem 0;
+    padding: 0;
   }
 
-  button {
-    font-size: 3rem;
+  #left, #right {
+    position: fixed;
+    bottom: 0;
+    font-size: 2rem;
     margin: auto;
-    background-color: $primaryTransparent;
     border: none;
     font-family: 'jacquard 12', sans-serif;
     transition: all 0.3s ease;
-    border-radius: 70%;
     padding: 10px;
     color: $wordSecondary;
+    background-color: $primaryTransparent;
+    z-index: 1000;
+    width: 3rem;
   }
+
+  #left {
+    left: 1.2rem;
+  }
+
+  #right {
+    right: 1.2rem;
+  }
+
 }
 
 svg, img {

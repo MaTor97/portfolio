@@ -1,15 +1,71 @@
 import React from "react";
-import '../styles/Home.scss';
+import home_image from '../../public/assets/home_image.jpg';
+import Contact from "./Contact";
+import { GithubSVG, LinkedinSVG, CodecademySVG } from '../../public/data/svg';
 
-const Home = ({language, setpage}) => {
+const Home = ({language}) => {
     return (
         <div className="home">
             {language === 'FR' 
-                ? <p>Matteo Tortora est un développeur web qui cherche à se spécialiser en React tout en construisant son arsenal d'outils pour devenir full-stack. À l'écoute des nouvelles opportunités et toujours partant, c'est un avenir de découvertes et d'évolutions qui l'attend. Vous pouvez retrouver son parcours professionnel <span onClick={() => setpage('cv')}>ici</span>.</p>                 
+                ? <div className="text">
+                    <div className="profile">
+                        <img src={home_image} alt="Matteo Tortora" className="home__img" />
+                        <div className="profileText">
+                            <h1>Matteo Tortora</h1>
+                            <p>"Développeur junior, il forge son expertise outil par outil pour devenir full-stack."</p>
+                        </div>
+                    </div>
+                    <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
+                        <GithubSVG />
+                    </a>
+                    <a className="circle" href="https://www.linkedin.com/in/matteo-tortora/" target="_blank" rel="noreferrer">
+                        <LinkedinSVG />
+                    </a>
+                    <a className="circle" href="https://www.codecademy.com/profiles/arc9207090463" target="_blank" rel="noreferrer">
+                        <CodecademySVG />
+                    </a>
+                    <Contact language={language} />
+                </div>                
             : language === 'EN' 
-                ? <p>Matteo Tortora is a web developer aiming to specialize in React while expanding his toolkit to become full-stack. Open to new opportunities and always ready, a future of discoveries and growth awaits him. You can find his professional journey <span onClick={() => setpage('cv')}>here</span>.</p> 
+                ? <div className="text">
+                    <div className="profile">
+                        <img src={home_image} alt="Matteo Tortora" className="home__img" />
+                        <div className="profileText">
+                            <h1>Matteo Tortora</h1>
+                            <p>"Junior developer, forging his expertise tool by tool on the path to becoming full-stack."</p>
+                        </div>
+                    </div>
+                    <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
+                        <GithubSVG />
+                    </a>
+                    <a className="circle" href="https://www.linkedin.com/in/matteo-tortora/" target="_blank" rel="noreferrer">
+                        <LinkedinSVG />
+                    </a>
+                    <a className="circle" href="https://www.codecademy.com/profiles/arc9207090463" target="_blank" rel="noreferrer">
+                        <CodecademySVG />
+                    </a>
+                    <Contact language={language} />
+                </div>  
             : language === 'IT' 
-                ? <p>Matteo Tortora è uno sviluppatore web che mira a specializzarsi in React mentre espande il suo arsenale di strumenti per diventare full-stack. Aperto a nuove opportunità e sempre pronto, un futuro di scoperte e crescita lo attende. Puoi trovare il suo percorso professionale <span onClick={() => setpage('cv')}>qui</span>.</p>
+                ? <div className="text">
+                    <div className="profile">
+                        <img src={home_image} alt="Matteo Tortora" className="home__img" />
+                        <div className="profileText">
+                            <h1>Matteo Tortora</h1>
+                            <p>"Sviluppatore junior, sta forgiando la sua competenza strumento dopo strumento per diventare full-stack."</p>
+                        </div>
+                    </div>
+                    <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
+                        <GithubSVG />
+                    </a>
+                    <a className="circle" href="https://www.linkedin.com/in/matteo-tortora/" target="_blank" rel="noreferrer">
+                        <LinkedinSVG />
+                    </a>
+                    <a className="circle" href="https://www.codecademy.com/profiles/arc9207090463" target="_blank" rel="noreferrer">
+                        <CodecademySVG />
+                    </a>
+                    <Contact language={language} />
+                </div>  
             : null
             }
         </div>

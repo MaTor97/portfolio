@@ -1,15 +1,9 @@
 .home {
     display: flex;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: $primaryTransparent;
+    box-shadow: 0 2px 5px $shadow;
     border-radius: .5rem;
-
-
-    img {
-        height: 22rem;
-        width: auto;
-    }
 
     p {
         font-family: 'Cedarville Cursive', cursive;
@@ -18,7 +12,15 @@
     }
 
     span {
-        color: #FF7300;
+        color: $wordSecondary;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .home {
+        border: 1px solid green;
+        height: 100%;
+        border-radius: 0;
     }
 }

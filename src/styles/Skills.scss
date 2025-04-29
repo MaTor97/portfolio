@@ -1,10 +1,12 @@
 .skillset {
+
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: right;
 
     .menu {
         li {
+            border: 1px solid red;
             position: absolute;
             list-style: none;
             top: 17.5rem;
@@ -19,6 +21,8 @@
             padding: 1rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             z-index: 3;
+            height: 4.5rem;
+            width: 4.5rem;
 
             a {
                 display: flex;
@@ -31,7 +35,7 @@
                 border-radius: 50%;
                 transform: rotate(calc(360deg / -8 * var(--i)));
                 transition: 0.3s;
-                background-color: #FF7300;
+                background-color: $wordSecondary;
                 padding: 5px;
 
                 img {
@@ -42,15 +46,16 @@
         }
 
         .toggleContainer {
-            position: relative;
+            border: 1px solid orange;
 
             .toggle {
                 position: relative;
                 height: 11rem;
                 width: 11rem;
-                top: 2.6rem;
+                top: 11rem;
+                left: 30rem;
                 border-radius: 50%;
-                background-color: rgba(0, 0, 0);
+                background-color: $primaryColor;
                 justify-content: center;
                 display: flex;
                 align-items: center;
@@ -73,8 +78,9 @@
     }
 
     .text {
-
-        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        right: 0;
+        background-color: $primaryTransparent;
         width: 20rem;
         height: 17rem;
         border-radius: .5rem;
@@ -85,9 +91,9 @@
             width: 100%;
             padding: .5rem;
             text-align: center;
-            border-bottom: 1px solid #007BFF;
-            background-color: black;
-            color: #FF7300;
+            border-bottom: 1px solid $borders;
+            background-color: $primaryColor;
+            color: $wordSecondary;
             font-weight: 700;
             font-size: 1.5rem;
             font-family: 'source code pro', sans-serif;
@@ -126,9 +132,9 @@
             width: 100%;
             padding: .5rem;
             text-align: center;
-            border-top: 1px solid #007BFF;
-            background-color: black;
-            color: #FF7300;
+            border-top: 1px solid $borders;
+            background-color: $primaryColor;
+            color: $wordSecondary;
             font-weight: 700;
             font-size: .7rem;
             font-family: 'source code pro', sans-serif;

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Nav from './components/Nav'
 import Content from './components/Content'
-import Footer from './components/Footer'
 import projectsData from '../public/data/projects.json'
 import experienceData from '../public/data/experiences.json'
 import skillsData from "../public/data/skills.json"
-import './styles/main.scss';
+import './style/main.scss';
 
 function App() {
   const [language, setLanguage] = useState('FR');
@@ -15,22 +15,23 @@ function App() {
   return (
     <>
       <Header language={language} setLanguage={setLanguage} setPage={setPage} setCount={setCount}/>
+      <Nav language={language} setPage={setPage} setCount={setCount}/>
       <div id="container">
         {page !== 'projects'
           ? null
           : count === 0
-          ? <button style={{opacity: 0}}>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)}>{'<'}</button>}
+          ? <button style={{opacity: 0}} id='left'>{'<'}</button>
+          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
         {page !== 'cv'
           ? null
           : count === 0
-          ? <button style={{opacity: 0}}>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)}>{'<'}</button>}
+          ? <button style={{opacity: 0}} id='left'>{'<'}</button>
+          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
         {page !== 'skills'
           ? null
           : count === 0
-          ? <button style={{opacity: 0}}>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)}>{'<'}</button>}
+          ? <button style={{opacity: 0}} id='left'>{'<'}</button>
+          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
         {page === 'contact'
           ? <h2>{language === 'FR'
                    ? 'Contactez-moi'
@@ -71,20 +72,19 @@ function App() {
         {page !== 'projects' 
           ? null
           : count >= projectsData.projects.length-1 
-          ? <button style={{opacity: 0}}>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
+          ? <button style={{opacity: 0}} id='right'>{'>'}</button>
+          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
         {page !== 'cv' 
           ? null
           : count >= experienceData.fr.length-1 
-          ? <button style={{opacity: 0}}>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
+          ? <button style={{opacity: 0}} id='right'>{'>'}</button>
+          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
         {page !== 'skills' 
           ? null
           : count >= skillsData.FR.length-1 
-          ? <button style={{opacity: 0}}>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)}>{'>'}</button>}
+          ? <button style={{opacity: 0}} id='right'>{'>'}</button>
+          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
       </div>
-      <Footer />
     </>
   )
 }

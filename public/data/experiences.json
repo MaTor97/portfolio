@@ -1,6 +1,15 @@
 {
     "fr": [
         {
+            "image": "/assets/experiences/charleroi.jpeg",
+            "title": "Stage  à Charleroi",
+            "start": "2025-03",
+            "end": "2025-05",
+            "description": "Stage de fin de formation à Charleroi, avec une immersion dans le développement web full-stack : implementation d'une version téléphone de l'application de communications interne des agents de la ville de Charleroi, faite avec WordPresse Api.",
+            "location": "Charleroi",
+            "skills": ["React", "Node.js", "WordPresse", "PHP", "Github"]
+        },
+        {
             "image": "/assets/experiences/dev.png",
             "title": "Becode",
             "start": "2024-09",
@@ -119,6 +128,15 @@
         }
     ],
     "it": [
+        {
+            "image": "/assets/experiences/charleroi.jpeg",
+            "title": "Stage a Charleroi",
+            "start": "2025-03",
+            "end": "2025-05",
+            "description": "Stage di fine formazione a Charleroi, con immersione nello sviluppo web full-stack: implementazione di una versione mobile dell'applicazione di comunicazione interna degli agenti della città di Charleroi, realizzata con WordPresse Api.",
+            "location": "Charleroi",
+            "skills": ["React", "Node.js", "WordPresse", "PHP", "Github"]
+        },
         {
             "image": "/assets/experiences/dev.png",
             "title": "Becode",
@@ -239,6 +257,15 @@
     ],
 
         "en": [
+            {
+                "image": "/assets/experiences/charleroi.jpeg",
+                "title": "Internship Charleroi",
+                "start": "2025-03",
+                "end": "2025-05",
+                "description": "End of training internship in Charleroi, with immersion in full-stack web development: implementation of a mobile version of the internal communication application for the agents of the city of Charleroi, made with WordPresse Api.",
+                "location": "Charleroi",
+                "skills": ["React", "Node.js", "WordPresse", "PHP", "Github"]
+            },
             {
                 "image": "/assets/experiences/dev.png",
                 "title": "Becode",
