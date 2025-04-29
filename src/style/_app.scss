@@ -68,9 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 
   h2 {
     
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: .5rem 0;
-    padding: 0;
+
   }
 
   #left, #right {
@@ -82,8 +82,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'jacquard 12', sans-serif;
     transition: all 0.3s ease;
     padding: 10px;
-    color: $wordSecondary;
-    background-color: $primaryTransparent;
+    color: $primaryColor;
+    background-color: $wordSecondary;
     z-index: 1000;
     width: 3rem;
   }

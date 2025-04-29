@@ -17,6 +17,16 @@ const ProjectCard = ({ project, language }) => {
                 </a>
                 
             <div className="project-card"> 
+                <p id='description'> 
+                    {project.description[language]}
+                </p>
+                <div className="tech">{project.technologies.map(tech => {
+                    return (
+                        <ul className="tech__item" key={tech}>
+                            <li>{tech}</li>
+                        </ul>
+                    )
+                })} { }</div>
                 <div className="project-card-text">
                     <div className="project-card__links">
                         <a className="circle" href={project.github} target="_blank" rel="noreferrer">
@@ -28,10 +38,6 @@ const ProjectCard = ({ project, language }) => {
                     </div>
                     
                 </div>
-                <p id='description'> 
-                    {project.description[language]}
-                </p>
-                <div className="tech">{project.technologies.join(', ')} { }</div>
             </div>  
             
         </div>

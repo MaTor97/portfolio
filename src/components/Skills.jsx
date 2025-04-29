@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 const Skills = ({ skillset, language }) => {
     const [isActive, setIsActive] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
+    console.log(skillset.icon);
 
-    const toggleMenu = () => setIsActive(!isActive);
     const handleItemClick = (item) => setSelectedItem(item);
 
     useEffect(() => {
@@ -26,53 +26,22 @@ const Skills = ({ skillset, language }) => {
         }
     };
 
-    const renderContent = () => {
-        const { title, instruction } = languageLabels[language] || languageLabels.FR;
-
-        if (selectedItem) {
-            return (
-                <>
-                    <h3>{selectedItem.name}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
-                </>
-            );
-        }
-
-        return (
-            <>
-                <h3>{title}</h3>
-                <ul>
-                    {skillset.items.map((item, index) => (
-                        <li key={index}>{item.name}</li>
-                    ))}
-                </ul>
-                <p id="feet">{instruction}</p>
-            </>
-        );
-    };
-
     return (
         <div className="skillset">
-            <div className={`menu ${isActive ? 'active' : ''}`}>
-                <div className="toggleContainer">
-                    <div className="toggle" onClick={toggleMenu}>
-                        {skillset.icon || "Toggle"}
-                    </div>
-                </div>
-                <ul>
-                    {skillset.items.map((item, index) => (
-                        <li key={index} style={{ '--i': index }} onClick={() => handleItemClick(item)}>
-                            <a href="#">
+            <ul>
+                {skillset.items.map((item, index) => (
+                    <li key={index} style={{ '--i': index }} onClick={() => handleItemClick(item)}>
+                        <a href="#">
+                            <div className="head">
                                 <img src={item.image} alt={item.name} title={item.name} />
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            <div className="text">
-                {renderContent()}
-            </div>
+                                <h4>{item.name}</h4>
+                            </div>
+                            <p>{item.description}</p>
+                        </a>
+                    </li>                 
+                ))}
+            </ul>
+            <div className="icon">{skillset.icon}</div>   
         </div>
     );
 };

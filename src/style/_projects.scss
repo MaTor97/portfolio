@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 1rem;
     font-family: 'source code pro', sans-serif;
 
     a {
@@ -16,54 +15,66 @@
             }
         }
     }
-
-    .project-card {
-        padding: 1rem;
-    
-
-        .project-card-text {
-            
-            .project-card__links {
-                border-top-left-radius: .5rem;
-                border-top-right-radius: .5rem;
-                background-color: $primaryColor;
-                padding: 10px;
-                text-align: center;
-                border-bottom: 1px solid $borders;
-
-                a {
-                    margin: 2rem;
-                    color: $wordSecondary;
-                    
-                    img {
-                        height: 3rem;
-                        width: auto;
-                    }
-                }
-
-                
-            }
-
-            
-        }
         
         #description {
-            padding: .5rem;
+            min-height: 32dvh;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: .5rem;
             background-color: $primaryTransparent;
         }
 
         .tech {
-            border-bottom-left-radius: .5rem;
-            border-bottom-right-radius: .5rem;
-            width: 100%;
-            font-style: normal;
-            color: $wordSecondary;
-            background-color: $primaryColor;
-            padding-left: .7rem;
-            height: 3rem;
-            font-weight: 700;
-            border-top: 1px solid $borders;
-            margin-bottom: 2rem;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 3rem;
+
+            li {
+                list-style: none;
+                padding: .2rem 1rem;
+                margin: 1rem auto;
+                width: 80%;
+                background-color: $primaryTransparent;
+                border-radius: .5rem;
+                color: $wordSecondary;
+                font-size: 1.2rem;
+                font-weight: 700;
+                
+            }
+        }
+
+        .project-card {
+            
+            .project-card-text {
+                
+                .project-card__links {
+                    padding: .2rem;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
+                    color: $borders;
+                    background-color: $borders;
+    
+                    a {
+                        margin: 2rem;
+                        color: $primaryColor;
+                        
+                        img {
+                            height: 1rem;
+                            width: auto;
+                        }
+                    }
+    
+                    
+                }
+    
+                
+            }
+
+        .bot {
+            
+
         }
     }
 }

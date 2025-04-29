@@ -1,6 +1,6 @@
 .exp {
     background-color: $primaryTransparent;
-    min-height: 73vh;
+    min-height: 77vh;
 
 
     h3 {
@@ -26,26 +26,32 @@
         }
 
         ul {
-            display: flex;
-            background-color: $borders;
-            margin: .5rem 0;
-            overflow: scroll;
-            scrollbar-width: none;
-            align-items: center;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 2rem;
 
             li {
-                margin: .5rem 1rem;
-                font-weight: bold;
-                width: 100%;
-                white-space: nowrap;
+                list-style: none;
+                padding: .2rem 1rem;
+                margin: 1rem auto;
+                width: 80%;
+                background-color: $primaryTransparent;
+                border-radius: .5rem;
+                color: $wordSecondary;
+                font-size: 1.2rem;
+                font-weight: 700;
             }
         }
     }
 
     .foot {
-        color: $wordSecondary;
-        margin: auto;
+        color: $wordPrimary;
+        font-weight: 800;
+        width: 100%;
         text-align: center;
+        background-color: $borders;
+        position: fixed;
+        bottom: 0;
     }  
 }
 

@@ -4,78 +4,41 @@
     width: 100%;
     padding: 1rem;
 
-    .menu {
-        text-align: center;
-        width: 100%;
-
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            background-color: $wordPrimary;
-            border: 1px solid $borders;
+    ul {
+        li {
             border-radius: .5rem;
+            background-color: $primaryTransparent;
+            overflow: hidden;
+            margin-bottom: 1rem;
 
-            
-            li {
-                border-radius: 50%;
-                padding: .2rem;
 
-                a {
-                    img {
-                        height: 2.2em;
-                        width: auto;
-                    }
+            .head {
+                display: flex;
+                background-color: $primaryColor;
+                align-items: center;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+                
+                h4 {
+                    margin-left: 1rem;
                 }
             }
 
-            li :hover {
-                background-color: $wordSecondary;
-                border-radius: 50%;
-                padding: .2rem;
+            p {
+                padding: .5rem 1rem;
             }
         }
-
-        .toggleContainer {
-            font-size: 4rem;
-            margin: auto;
-            display: none;
-            width: 11rem;         
-        }
     }
 
-    .text {
-        padding-bottom: 4.5rem;
-        min-height: 70dvh;
-
-        h3 {
-            font-size: 2rem;
-            margin: 1rem 0;
-            color: $borders;
-        }
-
-        li {
-            margin-left: 2rem;
-            padding: 0.5rem;
-        };
-    }
-
-    #feet {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .icon {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-color: $borders;
         width: 100%;
-        height: 100%;
-        padding: .5rem;
-        color: $borders;
-        background-color: $primaryTransparent;
-        border-radius: .2rem;
-    }
-
-    p {
-        background-color: $primaryTransparent;
-        border-radius: .2rem;
-        padding: .5rem;
+        padding: .2rem;
+        font-size: 1.2rem;
     }
 }
 
