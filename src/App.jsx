@@ -13,6 +13,16 @@ function App() {
   const [page, setPage] = useState('home');
   const [count, setCount] = useState(0);
 
+  const handleLeftClick = () => {
+      setCount(count - 1)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleRightClick = () => {
+    setCount(count + 1)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
   return (
     <>
       <WebViewWarning />
@@ -23,17 +33,17 @@ function App() {
           ? null
           : count === 0
           ? <button style={{opacity: 0}} id='left'>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
+          : <button onClick={() => handleLeftClick(count - 1)} id='left'>{'<'}</button>}
         {page !== 'cv'
           ? null
           : count === 0
           ? <button style={{opacity: 0}} id='left'>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
+          : <button onClick={() => handleLeftClick(count - 1)} id='left'>{'<'}</button>}
         {page !== 'skills'
           ? null
           : count === 0
           ? <button style={{opacity: 0}} id='left'>{'<'}</button>
-          : <button onClick={() => setCount(count - 1)} id='left'>{'<'}</button>}
+          : <button onClick={() => handleLeftClick(count - 1)} id='left'>{'<'}</button>}
         {page === 'contact'
           ? <h2>{language === 'FR'
                    ? 'Contactez-moi'
@@ -75,17 +85,17 @@ function App() {
           ? null
           : count >= projectsData.projects.length-1 
           ? <button style={{opacity: 0}} id='right'>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
+          : <button onClick={() => handleRightClick(count + 1)} id='right'>{'>'}</button>}
         {page !== 'cv' 
           ? null
           : count >= experienceData.fr.length-1 
           ? <button style={{opacity: 0}} id='right'>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
+          : <button onClick={() => handleRightClick(count + 1)} id='right'>{'>'}</button>}
         {page !== 'skills' 
           ? null
           : count >= skillsData.FR.length-1 
           ? <button style={{opacity: 0}} id='right'>{'>'}</button>
-          : <button onClick={() => setCount(count + 1)} id='right'>{'>'}</button>}
+          : <button onClick={() => handleRightClick(count + 1)} id='right'>{'>'}</button>}
       </div>
     </>
   )

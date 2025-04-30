@@ -55,12 +55,76 @@
     }  
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
+    .exp {
+        width: 100%;
+        height: 60dvh;
+        margin: auto;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        h3 {
+            border-bottom: 1px solid $borders;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .desc {
+                .imgContainer {
+                    display: flex;
+                    width: 100%;
+                    height: 300px;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid $borders;
+                    border-bottom: 1px solid $borders;
+    
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        border: none;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    border-radius: 0;
+                    width: 95%;
+                    height: 120px;
+                    margin: auto;
+                    border: 1px solid $borders;
+                    margin: .5rem 1rem;
+                }
+            }
+
+            ul {
+                height: 300px;
+                width: 90%;
+                overflow: scroll;
+                scrollbar-width: none;
+                border-bottom: 1px solid $borders;
+
+                li {
+                    padding: .2rem;
+                    background-color: $wordSecondary;
+                    color: $primaryColor;             
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
     .exp {
         width: 900px;
         height: 500px;
         margin: auto;
-        margin-top: 2rem;
         border-radius: 1rem;
         overflow: hidden;
 

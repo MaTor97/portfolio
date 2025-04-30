@@ -7,6 +7,7 @@ const Nav = ({ language, setPage, setCount }) => {
         setCount(0);
         setPage(page);
         setActive(page);
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     };
 
     return (
