@@ -1,39 +1,17 @@
-import { useEffect, useState } from "react";
-
-function isInWebView() {
-  const ua = navigator.userAgent || navigator.vendor || window.opera;
-  const isIOSWebView = /iPhone|iPod|iPad/.test(ua) && !/Safari/.test(ua);
-  const isAndroidWebView = ua.includes("wv") || (ua.includes("Android") && !ua.includes("Chrome"));
-  const isLinkedInWebView = ua.includes("LinkedInApp");
-  return isIOSWebView || isAndroidWebView || isLinkedInWebView;
-}
+import { useEffect } from "react";
 
 export default function WebViewWarning() {
-  const [showWarning, setShowWarning] = useState(false);
-
   useEffect(() => {
-    if (isInWebView()) {
-      setShowWarning(true);
+    const ua = navigator.userAgent || "";
+    const isWebView =
+      /FBAN|FBAV|Instagram|Line|EdgA|LinkedInApp|wv|; wv/.test(ua) ||
+      (ua.includes("Android") && !ua.includes("Chrome"));
+
+    if (isWebView) {
+      alert("Ce site s'affiche mal dans cette application. Il va s'ouvrir dans votre navigateur.");
+      window.location.href = "https://your-domain.com"; // Remplace par l'URL de ton site
     }
   }, []);
 
-  if (!showWarning) return null;
-
-  return (
-    <div style={{
-      background: "#ff7300",
-      color: "white",
-      padding: "10px",
-      textAlign: "center",
-      position: "fixed",
-      top: 0,
-      width: "100%",
-      zIndex: 9999
-    }}>
-      Ce site est mieux affiché dans un navigateur.{" "}
-      <a href={window.location.href} style={{ color: "white", textDecoration: "underline" }} target="_blank" rel="noopener noreferrer">
-        Ouvrir dans le navigateur
-      </a>
-    </div>
-  );
+  return null;
 }
