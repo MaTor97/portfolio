@@ -17,7 +17,6 @@
     }
         
         #description {
-            min-height: 32dvh;
             padding: 1rem;
             margin: 1rem;
             border-radius: .5rem;
@@ -50,6 +49,7 @@
                 .project-card__links {
                     padding: .4rem;
                     position: fixed;
+                    left: 0;
                     bottom: 0;
                     width: 100%;
                     text-align: center;
@@ -71,5 +71,93 @@
     
                 
             }
+    }
+}
+
+@media (min-width: 540px) {
+    .card {
+        a {
+            picture {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    max-width: 600px;
+                    height: auto;
+                    border: 1px solid $wordPrimary;
+                }
+            }
+        }
+    }
+
+    .project-card {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 800px;
+        height: 450px;
+        margin: auto;
+        margin-top: 5rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+
+        a {
+            picture {
+                display: flex;
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid $borders;
+                border-bottom: 1px solid $borders;
+
+                img {
+                    width: auto;
+                    height: 300px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 0;
+
+        #description {
+            border-radius: 0;
+            width: 100%;
+            height: 300px;
+            margin: 0;
+            overflow: scroll;
+            scrollbar-width: none;
+            border-bottom: 1px solid $borders;
+        }
+
+        .tech {
+            position: absolute;
+            width: 70%;
+            left: 15%;
+
+            ul {
+                margin: auto;
+                width: 600px;
+
+                li {
+                    margin: .2rem;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

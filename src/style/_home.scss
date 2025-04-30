@@ -6,17 +6,16 @@
     overflow: hidden;
 
     .profile {
-        display: flex;
-        border-bottom: 1px solid $borders;
-        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
 
         .home__img {
-            width: 50%;
+            width: 100%;
             height: auto;
             margin: 0 auto;
-            border-right: 1px solid $borders;
-            object-fit: cover;
             margin-top: -5px;
+            border-right: none;
         }
     
         .profileText {
@@ -39,5 +38,50 @@
     a {
         color: $wordSecondary;
         padding: 1rem;
+    }
+}
+
+@media (min-width: 540px) {
+    .home {
+        .profile {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid $borders;
+            margin-bottom: 1rem;
+    
+            .home__img {
+                width: 50%;
+                height: auto;
+                margin: 0 auto;
+                border-right: 1px solid $borders;
+                object-fit: cover;
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 725px) {
+    .home {
+        .profile { 
+            .home__img {
+                left: 0;
+                max-width: 15rem;
+                height: auto;
+                border-left: none;
+                object-fit: cover;
+                margin: 0;
+                margin-top: -5px;
+            }
+
+            .profileText {
+                padding: 1rem;
+                margin: auto;
+                text-align: center;
+                border: 1px solid $wordSecondary;
+                border-radius: .5rem;
+                background-color: $primaryColor;
+            }
+        }
     }
 }

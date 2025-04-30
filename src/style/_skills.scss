@@ -5,6 +5,7 @@
     padding: 1rem;
 
     ul {
+        margin-bottom: 3rem;
         li {
             border-radius: .5rem;
             background-color: $primaryTransparent;
@@ -42,4 +43,14 @@
     }
 }
 
+@media (min-width: 540px) {
+    .skillset {
+        ul {
+            li {
+                width: 60%;
+                margin: 1rem auto;
 
+            }
+        }
+    }
+}

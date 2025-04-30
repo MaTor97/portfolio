@@ -5,17 +5,16 @@ const ProjectCard = ({ project, language }) => {
     return (
         <div className="card">
             <a 
-                    className="circle" 
-                    href={project.demo} 
-                    target="_blank" 
-                     rel="noopener noreferrer"
-                    >
-                    <picture>
-                        <source srcSet={project.image} type="image/webp" />
-                        <img src={project.image2} alt={project.title[language]} loading="lazy" />
-                    </picture>
-                </a>
-                
+                className="circle" 
+                href={project.demo} 
+                target="_blank" 
+                 rel="noopener noreferrer"
+                >
+                <picture>
+                    <source srcSet={project.image} type="image/webp" />
+                    <img src={project.image2} alt={project.title[language]} loading="lazy" />
+                </picture>
+            </a>                
             <div className="project-card"> 
                 <p id='description'> 
                     {project.description[language]}
