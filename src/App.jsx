@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import WebViewWarning from './components/WebViewWarning'
 import Header from './components/Header'
 import Nav from './components/Nav'
