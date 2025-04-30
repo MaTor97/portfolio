@@ -58,23 +58,22 @@
     }
     
     .buttz {
-        margin: auto;
 
-            button {
-                cursor: pointer;
-                color: $wordPrimary;
-                font-size: 1.7rem;
-                font-weight: 900;
-                padding: .7rem;
-                border-radius: .2rem;
-                margin: .2rem;
-                border: 1px solid $borders;     
-                background-color: $primaryColor;
-            }
-        
-            button:hover {
-                color: $wordSecondary;
-            }
+        button {
+            cursor: pointer;
+            color: $wordPrimary;
+            font-size: 1.7rem;
+            font-weight: 900;
+            padding: .7rem;
+            border-radius: .2rem;
+            margin: .2rem;
+            border: 1px solid $borders;     
+            background-color: $primaryColor;
+        }
+
+        button:hover {
+            color: $wordSecondary;
         }
     }
+}
 
