@@ -9,7 +9,7 @@ export default function WebViewWarning() {
 
     if (isWebView) {
       alert("Ce site s'affiche mal dans cette application. Il va s'ouvrir dans votre navigateur.");
-      window.location.href = "https://portfolio-matteo-tortora.netlfiy.app"; // Remplace par l'URL de ton site
+      window.location.href = "https://portfolio-matteo-tortora.netlify.app"; // Remplace par l'URL de ton site
     }
   }, []);
 
