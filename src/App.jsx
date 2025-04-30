@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import WebViewWarning from './components/WebViewWarning'
 import Header from './components/Header'
 import Nav from './components/Nav'
 import Content from './components/Content'
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <WebViewWarning />
       <Header language={language} setLanguage={setLanguage} setPage={setPage} setCount={setCount}/>
       <Nav language={language} setPage={setPage} setCount={setCount}/>
       <div id="container">
