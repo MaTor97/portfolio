@@ -7,9 +7,11 @@ export default function WebViewWarning() {
       /FBAN|FBAV|Instagram|Line|EdgA|LinkedInApp|wv|; wv/.test(ua) ||
       (ua.includes("Android") && !ua.includes("Chrome"));
 
-    if (isWebView) {
+    // Vérifie si la redirection a déjà eu lieu
+    if (isWebView && !sessionStorage.getItem("redirected")) {
       alert("Ce site s'affiche mal dans cette application. Il va s'ouvrir dans votre navigateur.");
-      window.location.href = "https://portfolio-matteo-tortora.netlify.app"; // Remplace par l'URL de ton site
+      sessionStorage.setItem("redirected", "true"); // Marque que la redirection a eu lieu
+      window.location.href = "https://portfolio-matteo-tortora.netlify.app";
     }
   }, []);
 
