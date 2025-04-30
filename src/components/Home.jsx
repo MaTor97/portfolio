@@ -12,7 +12,7 @@ const Home = ({language}) => {
                         <img src={home_image} alt="Matteo Tortora" className="home__img" />
                         <div className="profileText">
                             <h1>Matteo Tortora</h1>
-                            <p>"Développeur junior, il forge son expertise outil par outil pour devenir full-stack."</p>
+                            <p>Développeur Web Junior</p>
                         </div>
                     </div>
                     <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
@@ -31,8 +31,8 @@ const Home = ({language}) => {
                     <div className="profile">
                         <img src={home_image} alt="Matteo Tortora" className="home__img" />
                         <div className="profileText">
-                            <h1>Matteo Tortora</h1>
-                            <p>"Junior developer, forging his expertise tool by tool on the path to becoming full-stack."</p>
+                            <h1>Matteo Tortora</h1> 
+                            <p>Junior Web Developer</p>
                         </div>
                     </div>
                     <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">
@@ -52,7 +52,7 @@ const Home = ({language}) => {
                         <img src={home_image} alt="Matteo Tortora" className="home__img" />
                         <div className="profileText">
                             <h1>Matteo Tortora</h1>
-                            <p>"Sviluppatore junior, sta forgiando la sua competenza strumento dopo strumento per diventare full-stack."</p>
+                            <p>Junior Web Developer</p>
                         </div>
                     </div>
                     <a className="circle" href="https://github.com/MaTor97" target="_blank" rel="noreferrer">

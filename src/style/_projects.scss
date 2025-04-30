@@ -48,7 +48,7 @@
             .project-card-text {
                 
                 .project-card__links {
-                    padding: .2rem;
+                    padding: .4rem;
                     position: fixed;
                     bottom: 0;
                     width: 100%;
@@ -57,11 +57,11 @@
                     background-color: $borders;
     
                     a {
-                        margin: 2rem;
+                        margin: 2rem;;
                         color: $primaryColor;
                         
-                        img {
-                            height: 1rem;
+                        svg {
+                            height: 2rem;
                             width: auto;
                         }
                     }
@@ -71,10 +71,5 @@
     
                 
             }
-
-        .bot {
-            
-
-        }
     }
 }

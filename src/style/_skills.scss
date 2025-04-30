@@ -9,14 +9,14 @@
             border-radius: .5rem;
             background-color: $primaryTransparent;
             overflow: hidden;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
 
 
             .head {
                 display: flex;
-                background-color: $primaryColor;
+                background-color: $wordSecondary;
+                padding: .2rem 1rem;
                 align-items: center;
-                margin-bottom: 1rem;
                 font-size: 1.2rem;
                 
                 h4 {
@@ -38,7 +38,7 @@
         background-color: $borders;
         width: 100%;
         padding: .2rem;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 }
 

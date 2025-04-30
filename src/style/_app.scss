@@ -74,9 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #left, #right {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     position: fixed;
     bottom: 0;
-    font-size: 2rem;
+    font-size: 3.2rem;
     margin: auto;
     border: none;
     font-family: 'jacquard 12', sans-serif;
