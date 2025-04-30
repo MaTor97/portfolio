@@ -12,10 +12,6 @@ export default function WebViewWarning() {
   const [showWarning, setShowWarning] = useState(false);
 
   useEffect(() => {
-    console.log("User-Agent:", navigator.userAgent);
-  }, []);
-
-  useEffect(() => {
     if (isInWebView()) {
       setShowWarning(true);
     }

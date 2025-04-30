@@ -13,6 +13,17 @@ function App() {
   const [page, setPage] = useState('home');
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    const ua = navigator.userAgent;
+    const div = document.createElement("div");
+    div.innerText = "User-Agent:\n" + ua;
+    div.style.whiteSpace = "pre-wrap";
+    div.style.padding = "20px";
+    div.style.fontSize = "14px";
+    div.style.background = "#f4f4f4";
+    document.body.prepend(div);
+  }, []);
+
   return (
     <>
       <WebViewWarning />
