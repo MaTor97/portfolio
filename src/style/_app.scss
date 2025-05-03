@@ -13,6 +13,9 @@ body {
 }
 
 body {
+  height: 100dvh;
+  overflow: auto;
+  scrollbar-width: none;
   line-height: 1.5;
   background-color: $primaryColor;
   color: $wordPrimary;
@@ -20,6 +23,7 @@ body {
   background-size: auto 100dvh;
   background-position: bottom center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Suppression des styles par défaut pour les éléments de liste */
