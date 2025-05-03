@@ -17,10 +17,9 @@ body {
   background-color: $primaryColor;
   color: $wordPrimary;
   background-image: url('/public/assets/earth.webp');
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100dvh;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  height: 100dvh;
 }
 
 /* Suppression des styles par défaut pour les éléments de liste */
@@ -74,8 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   h2 {
     
     font-size: 1.7rem;
-    margin: .5rem 0;
-
+    padding: .5rem 0;
+    text-align: center;
+    background-color: $primaryTransparent;
+    width: 100%;
   }
 
   #left, #right {
