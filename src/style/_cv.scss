@@ -13,9 +13,13 @@
                 height: auto;
                 background-color: $primaryTransparent;
                 margin: auto;
+                border-radius: .5rem;
+                overflow: hidden;
+
 
                 img {
                     width: 100%;
+                    border-radius: .5rem;
                     height: auto;
                 }
             }
@@ -36,11 +40,11 @@
                 padding: .2rem 1rem;
                 margin: 1rem auto;
                 width: 80%;
-                background-color: $primaryTransparent;
                 border-radius: .5rem;
-                color: $wordSecondary;
                 font-size: 1.2rem;
                 font-weight: 700;
+                background-color: $wordSecondary;
+                color: $primaryColor
             }
         }
     }
@@ -113,12 +117,6 @@
                 overflow: scroll;
                 scrollbar-width: none;
                 border-bottom: 1px solid $borders;
-
-                li {
-                    padding: .2rem;
-                    background-color: $wordSecondary;
-                    color: $primaryColor;             
-                }
             }
         }
     }
@@ -178,13 +176,6 @@
                 overflow: scroll;
                 scrollbar-width: none;
                 border-bottom: 1px solid $borders;
-
-                li {
-                    padding: .2rem;
-                    background-color: $wordSecondary;
-                    color: $primaryColor;        
-                    font-size: 1.2rem;     
-                }
             }
         }
     }
