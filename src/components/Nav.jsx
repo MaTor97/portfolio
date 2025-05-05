@@ -21,14 +21,6 @@ const Nav = ({ language, setPage, setCount }) => {
                     : 'INIZIO'}
                 </li>
 
-                <li id='skills' 
-                    onClick={() => changePage('skills')}  
-                    className={active === "skills" ? "active" : ""}>
-                    {language === 'FR' ? 'COMPÉTENCES' 
-                    : language === 'EN' ? 'SKILLS' 
-                    : 'COMPETENZE'}
-                </li>
-
                 <li id='projects' 
                     onClick={() => changePage('projects')}  
                     className={active === "projects" ? "active" : ""}>
@@ -43,7 +35,15 @@ const Nav = ({ language, setPage, setCount }) => {
                     {language === 'FR' ? 'EXPÉRIENCES' 
                     : language === 'EN' ? 'EXPERIENCES' 
                     : 'ESPERIENZE'}
-                </li>            
+                </li>     
+
+                <li id='skills' 
+                    onClick={() => changePage('skills')}  
+                    className={active === "skills" ? "active" : ""}>
+                    {language === 'FR' ? 'COMPÉTENCES' 
+                    : language === 'EN' ? 'SKILLS' 
+                    : 'COMPETENZE'}
+                </li>       
             </ul>
         </nav>
     );
