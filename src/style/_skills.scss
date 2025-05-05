@@ -36,7 +36,7 @@
             max-height: 0;
             overflow: scroll;
             scrollbar-width: none;
-            transition: max-height 0.5s ease, padding 0.3s ease;
+            transition: max-height 0.3s ease, padding 0.1s ease;
             padding: 0 1rem;
             background-color: $primaryTransparent;
             border-left: 5px solid $borders;
