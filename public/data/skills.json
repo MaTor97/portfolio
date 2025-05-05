@@ -1,7 +1,7 @@
 {
     "FR" : [
         {
-            "category": "Diplômes & certificats",
+            "category": "Diplômes",
             "icon": "🎓",
             "items": [{
                 "name": "CESI",
@@ -25,7 +25,7 @@
                 "description": "Les certifications Codecademy valident les compétences acquises dans divers domaines de la programmation et du développement web. Elles couvrent des sujets comme HTML, CSS, JavaScript, Python, et bien d'autres technologies. Ces certifications sont obtenues après avoir suivi des cours interactifs et réussi des projets pratiques, démontrant ainsi la maîtrise de concepts clés dans chaque domaine. J'en ai obtenu 13 cette année."            }]
         },
         {
-            "category": "Langages & Tech",
+            "category": "Technologies",
             "icon": "💻", 
             "items": [{
                 "name": "React",
@@ -118,7 +118,7 @@
     ],
     "EN" : [
         {
-            "category": "Degrees & Certificates",
+            "category": "Degrees",
             "icon": "🎓",
             "items": [
                 {
@@ -149,7 +149,7 @@
             ]
         },
         {
-            "category": "Languages & Technologies",
+            "category": "Technologies",
             "icon": "💻",
             "items": [
                 {
@@ -190,7 +190,7 @@
             ]
         },
         {
-            "category": "Tools & Environments",
+            "category": "Tools",
             "icon": "🛠️",
             "items": [
                 {
@@ -264,7 +264,7 @@
     ],
     "IT" : [
         {
-            "category": "Diplomi & Certificati",
+            "category": "Diplomi",
             "icon": "🎓",
             "items": [
                 {
@@ -295,7 +295,7 @@
             ]
         },
         {
-            "category": "Linguaggi & Tecnologie",
+            "category": "Tecnologie",
             "icon": "💻",
             "items": [
                 {
@@ -336,7 +336,7 @@
             ]
         },
         {
-            "category": "Strumenti & Ambienti",
+            "category": "Strumenti",
             "icon": "🛠️",
             "items": [
                 {
