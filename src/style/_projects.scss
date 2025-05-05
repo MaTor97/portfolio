@@ -9,18 +9,18 @@
     a {
         picture {           
             img {
-                width: 100%;
+                width: 80%;
                 height: auto;
-               
+                margin: auto;
             }
         }
     }
         
         #description {
-            padding: 1rem;
-            margin: 1rem;
+            width: 80%;
+            height: auto;
+            margin: .5rem auto;
             border-radius: .5rem;
-            background-color: $primaryTransparent;
         }
 
         .tech {
@@ -33,11 +33,11 @@
                 padding: .2rem 1rem;
                 margin: 1rem auto;
                 width: 80%;
-                background-color: $primaryTransparent;
                 border-radius: .5rem;
-                color: $wordSecondary;
                 font-size: 1.2rem;
                 font-weight: 700;
+                background-color: $wordSecondary;
+                    color: $primaryColor;
                 
             }
         }
@@ -148,6 +148,7 @@
             position: absolute;
             width: 70%;
             left: 15%;
+            top: 66%;
 
             ul {
                 margin: auto;
@@ -156,6 +157,7 @@
                 li {
                     margin: .2rem;
                     width: 100%;
+                    
                 }
             }
         }
