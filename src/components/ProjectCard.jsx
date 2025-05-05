@@ -4,29 +4,32 @@ import {GithubSVG, VisitSVG} from '../../public/data/svg';
 const ProjectCard = ({ project, language }) => {
     return (
         <div className="card">
-            <a 
-                className="circle" 
-                href={project.demo} 
-                target="_blank" 
-                 rel="noopener noreferrer"
-                >
-                <picture>
-                    <source srcSet={project.image} type="image/webp" />
-                    <img src={project.image2} alt={project.title[language]} loading="lazy" />
-                </picture>
-            </a>                
+                   
             <div className="project-card"> 
+                <a 
+                    className="circle" 
+                    href={project.demo} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    <picture>
+                        <source srcSet={project.image} type="image/webp" />
+                        <img src={project.image2} alt={project.title[language]} loading="lazy" />
+                    </picture>
+                </a>         
                 <p id='description'> 
                     {project.description[language]}
                 </p>
-                <div className="tech">{project.technologies.map(tech => {
+            </div>  
+            <div className="tech">{project.technologies.map(tech => {
                     return (
                         <ul className="tech__item" key={tech}>
                             <li>{tech}</li>
                         </ul>
                     )
-                })} { }</div>
-                <div className="project-card-text">
+                })} { }
+            </div>
+            <div className="project-card-text">
                     <div className="project-card__links">
                         <a className="circle" href={project.github} target="_blank" rel="noreferrer">
                             <GithubSVG />
@@ -37,8 +40,6 @@ const ProjectCard = ({ project, language }) => {
                     </div>
                     
                 </div>
-            </div>  
-            
         </div>
     );
 }

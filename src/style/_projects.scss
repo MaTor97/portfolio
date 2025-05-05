@@ -1,20 +1,19 @@
 .card {
     background-color: $primaryTransparent;
-    box-shadow: 0 2px 5px $shadow;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: 'source code pro', sans-serif;
 
-    a {
-        picture {           
-            img {
-                width: 80%;
-                height: auto;
-                margin: auto;
+    .project-card {
+        a {
+            picture {           
+                img {
+                    width: 80%;
+                    height: auto;
+                    margin: auto;
+                }
             }
         }
-    }
         
         #description {
             width: 80%;
@@ -22,17 +21,20 @@
             margin: .5rem auto;
             border-radius: .5rem;
         }
+    }
 
-        .tech {
-            text-align: center;
+    .tech {
+        text-align: center;
+
+        ul {
+            width: 80%;
             margin: auto;
-            padding-bottom: 3rem;
 
             li {
                 list-style: none;
-                padding: .2rem 1rem;
+                padding: .2rem;
                 margin: 1rem auto;
-                width: 80%;
+                width: 100%;
                 border-radius: .5rem;
                 font-size: 1.2rem;
                 font-weight: 700;
@@ -41,119 +43,88 @@
                 
             }
         }
-
-        .project-card {
-            
-            .project-card-text {
-                
-                .project-card__links {
-                    padding: .4rem;
-                    position: fixed;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    text-align: center;
-                    color: $borders;
-                    background-color: $borders;
-    
-                    a {
-                        margin: 2rem;;
-                        color: $primaryColor;
-                        
-                        svg {
-                            height: 2rem;
-                            width: auto;
-                        }
-                    }
-    
-                    
-                }
-    
-                
-            }
     }
-}
 
-@media (min-width: 540px) {
-    .card {
-        a {
-            picture {
-                display: flex;
-                width: 100%;
-                align-items: center;
-                justify-content: center;
+    .project-card-text {
+        .project-card__links {
+            padding: .4rem;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: $borders;
+            background-color: $borders;
 
-                img {
-                    max-width: 600px;
-                    height: auto;
-                    border: 1px solid $wordPrimary;
+            a {
+                margin: 2rem;;
+                color: $primaryColor;
+                
+                svg {
+                    height: 2rem;
+                    width: auto;
                 }
             }
         }
     }
-
-    .project-card {
-        max-width: 600px;
-        margin: 0 auto;
-    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .card {
         width: 900px;
         height: 500px;
-        margin: auto;
         border-radius: 1rem;
+        margin: auto;
         overflow: hidden;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 0;
-
-        a {
-            picture {
-                display: flex;
-                width: 100%;
-                height: 300px;
-                overflow: hidden;
-                align-items: center;
-                justify-content: center;
-                border-right: 1px solid $borders;
-                border-bottom: 1px solid $borders;
-
-                img {
-                    width: auto;
+        
+        .project-card {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            border-bottom: 1px solid $borders;
+    
+            a {
+                picture {
+                    display: flex;
+                    width: 100%;
                     height: 300px;
-                    border: none;
-                    object-fit: cover;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+    
+                    img {
+                        width: auto;
+                        height: 300px;
+                        border: none;
+                        object-fit: cover;
+                    }
                 }
             }
-        }
-    }
-
-    .project-card {
-        width: 100%;
-        padding: 0;
-
-        #description {
-            border-radius: 0;
-            width: 320px;
-            height: 300px;
-            margin: 0;
-            overflow: scroll;
-            scrollbar-width: none;
-            border-bottom: 1px solid $borders;
+    
+            #description {
+                border-radius: 0;
+                width: 320px;
+                height: 300px;
+                margin: 0;
+                padding: 1rem;
+                overflow: scroll;
+                scrollbar-width: none;
+                border-left: 1px solid $borders;
+            }
         }
 
         .tech {
-            position: absolute;
-            width: 70%;
+            width: 100%;
             left: 15%;
             top: 66%;
-
+    
             ul {
                 margin: auto;
                 width: 600px;
-
+    
                 li {
                     margin: .2rem;
                     width: 100%;
