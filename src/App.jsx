@@ -54,14 +54,12 @@ function App() {
                  : null}</h2>
         : page === 'projects'
             ? <h2>{language === 'FR'
-                      ? `Projets ${count+1}/${projectsData.projects.length}
-                      : ${projectsData.projects[count].title[language]}`
+                      ? `${projectsData.projects[count].title[language]} : ${count+1}/${projectsData.projects.length}
+                     `
                     : language === 'EN'
-                      ? `Projects ${count+1}/${projectsData.projects.length}
-                      : ${projectsData.projects[count].title[language]}`
+                      ? `${projectsData.projects[count].title[language]} : ${count+1}/${projectsData.projects.length}`
                     : language === 'IT'
-                      ? `Progetti ${count+1}/${projectsData.projects.length}
-                      : ${projectsData.projects[count].title[language]}`
+                      ? `${projectsData.projects[count].title[language]} : ${count+1}/${projectsData.projects.length}`
                     : null}</h2>
         : page === 'cv'
             ? <h2>{language === 'FR'
