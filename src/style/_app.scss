@@ -75,10 +75,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 
   h2 {
-    margin: 1.5rem;
+    padding: 1.5rem;
     font-size: 1.7rem;
     text-align: center;
     width: 100%;
+    background-color: $primaryTransparent;
   }
 
   #left, #right {
@@ -113,6 +114,22 @@ h1, h2, h3, h4, h5, h6 {
 svg, img {
   width: 1.7rem;
   height: 1.7rem;
+}
+
+@media (min-width: 900px) {
+  #container {
+    h2 {
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+
+    #left {
+      left: 4rem;
+    }
+  
+    #right {
+      right: 4rem;
+    }
+  }
 }
 
 @media (min-width: 1280px) {

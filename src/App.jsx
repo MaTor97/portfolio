@@ -15,7 +15,7 @@ function App() {
 
   const handleLeftClick = () => {
       setCount(count - 1)
-      window.scrollTo({ top: 128, behavior: 'smooth' })
+      window.scrollTo({  top: window.width <= 540 ?  64 : 128, behavior: 'smooth' })
   }
 
   const handleRightClick = () => {
