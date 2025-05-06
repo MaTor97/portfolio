@@ -33,7 +33,7 @@
         ul {
             margin: auto;
             text-align: center;
-            padding-bottom: 2rem;
+            padding-bottom: 5rem;
 
             li {
                 list-style: none;
@@ -113,6 +113,7 @@
                 overflow: scroll;
                 scrollbar-width: none;
                 border-left: 1px solid $borders;
+                padding-bottom: 0;
             }
         }
     }

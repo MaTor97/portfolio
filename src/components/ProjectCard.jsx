@@ -21,13 +21,14 @@ const ProjectCard = ({ project, language }) => {
                     {project.description[language]}
                 </p>
             </div>  
-            <div className="tech">{project.technologies.map(tech => {
+            <div className="tech">
+                <ul>
+                    {project.technologies.map(tech => {
                     return (
-                        <ul className="tech__item" key={tech}>
-                            <li>{tech}</li>
-                        </ul>
-                    )
-                })} { }
+                        <li key={tech}>{tech}</li>
+                        )
+                    })}
+                </ul>
             </div>
             <div className="project-card-text">
                     <div className="project-card__links">
