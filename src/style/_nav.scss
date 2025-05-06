@@ -11,12 +11,15 @@
     
     ul {
         display: flex;
-       
+       overflow-x: auto;
+       scrollbar-width: none;;
+       white-space: nowrap;
 
         li {
             font-size: 1.7rem;
             font-weight: 900;
             padding: .1rem 1rem;
+            flex: 0 0 auto;
         }
 
         .active {

@@ -82,3 +82,15 @@
     }
 }
 
+@media (min-width: 768px) {
+    .contact-container {
+        form {
+            gap: 10px; 
+        }
+
+        .buttz {
+            width: 60%;
+            margin: auto;
+        }
+    }
+}

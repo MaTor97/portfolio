@@ -7,8 +7,18 @@ const Nav = ({ language, setPage, setCount }) => {
         setCount(0);
         setPage(page);
         setActive(page);
-        window.scrollTo({ top: page === 'home' ? 0 : window.innerWidth <= 540 ? 64 : 128, behavior: 'smooth' })
+    
+        const element = document.getElementById(page);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+    
+        window.scrollTo({
+            top: page === 'home' ? 0 : window.innerWidth <= 540 ? 64 : 128,
+            behavior: 'smooth'
+        });
     };
+    
 
     return (
         <nav id="side">
