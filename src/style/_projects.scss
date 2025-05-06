@@ -101,7 +101,7 @@
                     justify-content: center;
     
                     img {
-                        width: auto;
+                        width: 100%;
                         height: 300px;
                         border: none;
                         object-fit: cover;
@@ -111,7 +111,7 @@
     
             #description {
                 border-radius: 0;
-                width: 320px;
+                width: 450px;
                 height: 300px;
                 margin: 0;
                 padding: 1rem;
