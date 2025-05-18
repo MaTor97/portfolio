@@ -55,6 +55,10 @@
                 "name": "Springboot",
                 "image": "/assets/compétences/springboot.png",
                 "description": "Spring Boot est un framework Java open-source qui simplifie le développement d'applications en réduisant les configurations nécessaires. Il permet de créer des applications autonomes et prêtes à déployer, avec un environnement de développement rapide et une multitude de fonctionnalités intégrées. Spring Boot est idéal pour développer des microservices grâce à sa simplicité et sa flexibilité."
+            }, {
+                "name": "Wordpresse",
+                "image": "/assets/compétences/wordpress.png",
+                "description": "WordPress est un système de gestion de contenu (CMS) qui permet aux utilisateurs de créer et gérer facilement des sites web. Il est open-source et hautement personnalisable, avec un vaste écosystème de thèmes et de plugins. WordPress est largement utilisé pour les blogs, les sites d'entreprise et les plateformes de commerce électronique en raison de son interface conviviale et de sa flexibilité."
             }]
         },
         {
@@ -88,6 +92,10 @@
                 "name": "Chatgpt",
                 "image": "/assets/compétences/gpt.png",
                 "description": "Le prompt engineering est la pratique de concevoir et formuler des demandes précises pour interagir efficacement avec les modèles d'intelligence artificielle (IA), comme ChatGPT. Je m'en sers pour les tâches répétitives et pour me guider dans la résolution de certains problèmes. Ca m'aide aussi parfois a mettre les choses en perspective."
+            }, {
+                "name": "Figma",
+                "image": "/assets/compétences/figma.png",
+                "description": "Figma est un outil de design basé sur le web qui permet aux utilisateurs de créer, prototyper et collaborer sur des designs d'interface utilisateur (UI) et d'expérience utilisateur (UX). Il offre des fonctionnalités de collaboration en temps réel, permettant à plusieurs utilisateurs de travailler simultanément sur le même design. Figma est largement utilisé pour concevoir des sites web, des applications mobiles et d'autres produits numériques, ce qui en fait un choix populaire parmi les designers et les équipes."
             }]
         },
         {
@@ -186,6 +194,11 @@
                     "name": "Spring Boot",
                     "image": "/assets/compétences/springboot.png",
                     "description": "Spring Boot is an open-source Java framework that simplifies application development by reducing the necessary configurations. It allows the creation of standalone, deployable applications with a fast development environment and a multitude of built-in features. Spring Boot is ideal for developing microservices due to its simplicity and flexibility."
+                },
+                {
+                    "name": "Wordpresse",
+                    "image": "/assets/compétences/wordpress.png",
+                    "description": "WordPress is a content management system (CMS) that allows users to create and manage websites easily. It is open-source and highly customizable, with a vast ecosystem of themes and plugins. WordPress is widely used for blogs, business sites, and e-commerce platforms due to its user-friendly interface and flexibility."
                 }
             ]
         },
@@ -227,6 +240,11 @@
                     "name": "Chatgpt",
                     "image": "/assets/compétences/gpt.png",
                     "description": "Prompt engineering is the practice of designing and formulating precise requests to effectively interact with artificial intelligence (AI) models, like ChatGPT. I use it for repetitive tasks and to guide me in solving certain problems. It also helps me put things into perspective sometimes."
+                },
+                {
+                    "name": "Figma",
+                    "image": "/assets/compétences/figma.png",
+                    "description": "Figma is a web-based design tool that allows users to create, prototype, and collaborate on user interface (UI) and user experience (UX) designs. It offers real-time collaboration features, enabling multiple users to work on the same design simultaneously. Figma is widely used for designing websites, mobile applications, and other digital products, making it a popular choice among designers and teams."
                 }
             ]
         },
@@ -332,6 +350,11 @@
                     "name": "Spring Boot",
                     "image": "/assets/compétences/springboot.png",
                     "description": "Spring Boot è un framework Java open-source che semplifica lo sviluppo di applicazioni riducendo le configurazioni necessarie. Consente la creazione di applicazioni autonome e pronte per il deployment, con un ambiente di sviluppo rapido e una moltitudine di funzionalità integrate. Spring Boot è ideale per lo sviluppo di microservizi grazie alla sua semplicità e flessibilità."
+                },
+                {
+                    "name": "Wordpresse",
+                    "image": "/assets/compétences/wordpress.png",
+                    "description": "WordPress è un sistema di gestione dei contenuti (CMS) open-source utilizzato per creare e gestire siti web. È noto per la sua facilità d'uso, flessibilità e vasta gamma di temi e plugin che consentono agli utenti di personalizzare il proprio sito senza dover scrivere codice. WordPress è ampiamente utilizzato per blog, portali aziendali, negozi online e molto altro."
                 }
             ]
         },
@@ -373,6 +396,11 @@
                     "name": "Chatgpt",
                     "image": "/assets/compétences/gpt.png",
                     "description": "Il prompt engineering è la pratica di progettare e formulare richieste precise per interagire efficacemente con modelli di intelligenza artificiale (IA), come ChatGPT. Lo uso per attività ripetitive e per guidarmi nella risoluzione di alcuni problemi. Mi aiuta anche a mettere le cose in prospettiva a volte."
+                },
+                {
+                    "name": "Figma",
+                    "image": "/assets/compétences/figma.png",
+                    "description": "Figma è uno strumento di design collaborativo basato su cloud, utilizzato per la progettazione di interfacce utente e prototipi. Consente a più utenti di lavorare simultaneamente su un progetto, facilitando la collaborazione tra designer e sviluppatori. Figma offre funzionalità come la creazione di componenti riutilizzabili, la gestione delle versioni e l'integrazione con altri strumenti di sviluppo."
                 }
             ]
         },
