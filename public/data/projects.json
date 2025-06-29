@@ -1,6 +1,23 @@
 {
     "projects": [
         {
+            "image": "/assets/projects/socratesForm.png",
+            "image2": "/assets/projects/socratesForm.png",
+            "title": {
+                "FR": "Formulaire Socrates",
+                "EN": "Socrates Form",
+                "IT": "Modulo Socrate"
+            },
+            "description": {
+                "FR": "Cyber Socrates est un questionnaire vidéo interactif qui aide les utilisateurs à définir l’identité visuelle de leur projet ainsi que leur client type. Les réponses sont envoyées via EmailJS, ce qui me permet d’y accéder tout en garantissant leur anonymat (hors adresse email). En retour, chaque participant reçoit par email un document personnalisé généré avec l’aide de ChatGPT, incluant une proposition d’identité visuelle cohérente et un persona client détaillé. Ce projet combine vidéo, réflexion stratégique et intelligence artificielle pour offrir une expérience à la fois ludique et utile.",
+                "EN": "Cyber Socrates is an interactive video questionnaire that helps users define the visual identity of their project as well as their typical client. The answers are sent via EmailJS, which allows me to access them while ensuring their anonymity (except for the email address). In return, each participant receives a personalized document by email generated with the help of ChatGPT, including a proposal for a coherent visual identity and a detailed client persona. This project combines video, strategic thinking, and artificial intelligence to provide an experience that is both fun and useful.",
+                "IT": "Cyber Socrates è un questionario video interattivo che aiuta gli utenti a definire l'identità visiva del loro progetto e il loro cliente tipo. Le risposte vengono inviate tramite EmailJS, il che mi consente di accedervi garantendo l'anonimato (tranne per l'indirizzo email). In cambio, ogni partecipante riceve via email un documento personalizzato generato con l'aiuto di ChatGPT, che include una proposta di identità visiva coerente e un persona cliente dettagliato. Questo progetto combina video, riflessione strategica e intelligenza artificiale per offrire un'esperienza sia ludica che utile."
+            },
+            "technologies": ["React", "EmailJS", "ChatGPT"],
+            "github": "https://github.com/MaTor97/socrates",
+            "demo": "https://socratesform.netlify.app"
+        },
+        {
             "image": "/assets/projects/SolarSystem.webp",
             "image2": "/assets/projects/SolarSystem.png",
             "title": {
@@ -51,5 +68,6 @@
             "github": "https://github.com/MaTor97/react_to_do_list",
             "demo": "https://to-do-list-becode.netlify.app"
         }
+        
     ]
 }
